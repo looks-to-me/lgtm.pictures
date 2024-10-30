@@ -85,13 +85,13 @@ importers:
         version: 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@supabase/auth-helpers-nextjs':
         specifier: 0.10.0
-        version: 0.10.0(@supabase/supabase-js@2.45.6)
+        version: 0.10.0(@supabase/supabase-js@2.46.1)
       '@supabase/auth-helpers-react':
         specifier: 0.5.0
-        version: 0.5.0(@supabase/supabase-js@2.45.6)
+        version: 0.5.0(@supabase/supabase-js@2.46.1)
       '@supabase/supabase-js':
-        specifier: 2.45.6
-        version: 2.45.6
+        specifier: 2.46.1
+        version: 2.46.1
       ahooks:
         specifier: 3.8.1
         version: 3.8.1(react@18.3.1)
@@ -2498,8 +2498,8 @@ packages:
   '@supabase/storage-js@2.7.1':
     resolution: {integrity: sha512-asYHcyDR1fKqrMpytAS1zjyEfvxuOIp1CIXX7ji4lHHcJKqyk+sLl/Vxgm4sN6u8zvuUtae9e4kDxQP2qrwWBA==}
 
-  '@supabase/supabase-js@2.45.6':
-    resolution: {integrity: sha512-qVXSSUhhIqdFnF2VUGgeecPvw1cDW6+avcTbRgur4LaGnzrJCbM3Rx7g81/SSZjjeqYOtmHuKWhiHzV/EN8Ktw==}
+  '@supabase/supabase-js@2.46.1':
+    resolution: {integrity: sha512-HiBpd8stf7M6+tlr+/82L8b2QmCjAD8ex9YdSAKU+whB/SHXXJdus1dGlqiH9Umy9ePUuxaYmVkGd9BcvBnNvg==}
 
   '@swc/core-darwin-arm64@1.7.24':
     resolution: {integrity: sha512-s0k09qAcsoa8jIncwgRRd43VApYqXu28R4OmICtDffV4S01HtsRLRarXsMuLutoZk3tbxqitep+A8MPBuqNgdg==}
@@ -10232,19 +10232,19 @@ snapshots:
       - supports-color
       - typescript
 
-  '@supabase/auth-helpers-nextjs@0.10.0(@supabase/supabase-js@2.45.6)':
+  '@supabase/auth-helpers-nextjs@0.10.0(@supabase/supabase-js@2.46.1)':
     dependencies:
-      '@supabase/auth-helpers-shared': 0.7.0(@supabase/supabase-js@2.45.6)
-      '@supabase/supabase-js': 2.45.6
+      '@supabase/auth-helpers-shared': 0.7.0(@supabase/supabase-js@2.46.1)
+      '@supabase/supabase-js': 2.46.1
       set-cookie-parser: 2.6.0
 
-  '@supabase/auth-helpers-react@0.5.0(@supabase/supabase-js@2.45.6)':
+  '@supabase/auth-helpers-react@0.5.0(@supabase/supabase-js@2.46.1)':
     dependencies:
-      '@supabase/supabase-js': 2.45.6
+      '@supabase/supabase-js': 2.46.1
 
-  '@supabase/auth-helpers-shared@0.7.0(@supabase/supabase-js@2.45.6)':
+  '@supabase/auth-helpers-shared@0.7.0(@supabase/supabase-js@2.46.1)':
     dependencies:
-      '@supabase/supabase-js': 2.45.6
+      '@supabase/supabase-js': 2.46.1
       jose: 4.14.4
 
   '@supabase/auth-js@2.65.1':
@@ -10277,7 +10277,7 @@ snapshots:
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
-  '@supabase/supabase-js@2.45.6':
+  '@supabase/supabase-js@2.46.1':
     dependencies:
       '@supabase/auth-js': 2.65.1
       '@supabase/functions-js': 2.4.3
