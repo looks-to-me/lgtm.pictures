@@ -75,7 +75,7 @@
     "@vitejs/plugin-react": "4.3.3",
     "better-sqlite3": "11.5.0",
     "dotenv": "16.4.5",
-    "drizzle-kit": "0.26.2",
+    "drizzle-kit": "0.27.0",
     "eslint": "8.57.1",
     "mini-css-extract-plugin": "2.9.1",
     "miniflare": "3.20241022.0",
