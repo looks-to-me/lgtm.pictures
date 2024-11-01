@@ -59,7 +59,7 @@
     "@storybook/addon-essentials": "8.3.2",
     "@storybook/addon-interactions": "8.3.2",
     "@storybook/addon-links": "8.3.2",
-    "@storybook/addon-styling-webpack": "1.0.0",
+    "@storybook/addon-styling-webpack": "1.0.1",
     "@storybook/nextjs": "8.3.2",
     "@storybook/react": "8.3.2",
     "@tsconfig/next": "2.0.3",
