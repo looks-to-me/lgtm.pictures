@@ -163,8 +163,8 @@ importers:
         specifier: 8.3.2
         version: 8.3.2(react@18.3.1)(storybook@8.3.2)
       '@storybook/addon-styling-webpack':
-        specifier: 1.0.0
-        version: 1.0.0(storybook@8.3.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
+        specifier: 1.0.1
+        version: 1.0.1(storybook@8.3.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
       '@storybook/nextjs':
         specifier: 8.3.2
         version: 8.3.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19)(next@14.2.16(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.2)(type-fest@4.26.1)(typescript@5.6.3)(webpack-hot-middleware@2.25.4)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
@@ -2282,8 +2282,8 @@ packages:
     peerDependencies:
       storybook: ^8.3.2
 
-  '@storybook/addon-styling-webpack@1.0.0':
-    resolution: {integrity: sha512-jo1kzn7pi+NA+LZxrWoRvW6w7dXIKY/BjTG80XX2uU92lIKT+X1k/9vYk/0KPVK3Bsf4tO6ToAuqIRyOk7MHtg==}
+  '@storybook/addon-styling-webpack@1.0.1':
+    resolution: {integrity: sha512-5n+SXPfMTc4m7sWaJWPWjoHYWc6/B111M2Ia55toQ3GV4ON4vVlTgH9FX+EgCkDticElj99HLTMDJkHRj2yvkg==}
     peerDependencies:
       webpack: ^5.0.0
 
@@ -9886,7 +9886,7 @@ snapshots:
       storybook: 8.3.2
       ts-dedent: 2.2.0
 
-  '@storybook/addon-styling-webpack@1.0.0(storybook@8.3.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))':
+  '@storybook/addon-styling-webpack@1.0.1(storybook@8.3.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))':
     dependencies:
       '@storybook/node-logger': 8.2.9(storybook@8.3.2)
       webpack: 5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19)
