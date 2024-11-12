@@ -146,7 +146,7 @@ importers:
         version: 3.0.9(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(@agaroot/eslint-config-typescript@2.0.8(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)
       '@cloudflare/next-on-pages':
         specifier: 1.13.5
-        version: 1.13.5(@cloudflare/workers-types@4.20241106.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.86.0(@cloudflare/workers-types@4.20241106.0))
+        version: 1.13.5(@cloudflare/workers-types@4.20241106.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.86.1(@cloudflare/workers-types@4.20241106.0))
       '@cloudflare/workers-types':
         specifier: 4.20241106.0
         version: 4.20241106.0
@@ -238,8 +238,8 @@ importers:
         specifier: 2.1.4
         version: 2.1.4(@edge-runtime/vm@3.2.0)(@types/node@20.17.6)(jsdom@25.0.0)(terser@5.18.2)
       wrangler:
-        specifier: 3.86.0
-        version: 3.86.0(@cloudflare/workers-types@4.20241106.0)
+        specifier: 3.86.1
+        version: 3.86.1(@cloudflare/workers-types@4.20241106.0)
 
   apps/worker-cdn:
     dependencies:
@@ -260,8 +260,8 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       wrangler:
-        specifier: 3.86.0
-        version: 3.86.0(@cloudflare/workers-types@4.20241106.0)
+        specifier: 3.86.1
+        version: 3.86.1(@cloudflare/workers-types@4.20241106.0)
 
   apps/worker-image-overlay:
     dependencies:
@@ -279,8 +279,8 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       wrangler:
-        specifier: 3.86.0
-        version: 3.86.0(@cloudflare/workers-types@4.20241106.0)
+        specifier: 3.86.1
+        version: 3.86.1(@cloudflare/workers-types@4.20241106.0)
 
   packages/image-cache:
     devDependencies:
@@ -308,22 +308,26 @@ packages:
 
   '@agaroot/eslint-config-common@3.0.6':
     resolution: {integrity: sha512-0qpFSCkx0LR4GkFgIxWuaNS+ZUDPwpj409RNzHWGtg26X/WY6JE5ka+hdM49zaGJ50isV7kX8C6ueLcgo8j5Pg==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-common.
     peerDependencies:
       eslint: ^8.0.0
 
   '@agaroot/eslint-config-definer@1.0.5':
     resolution: {integrity: sha512-RTYVTKz8FXDv9uGcA8ACxWR91WqU7wmX6L+9OBMQn5JFVTbUaCP4VRzD0HoUjzocEXQozssCeQOn2xNY4VRDTg==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-definer.
     peerDependencies:
       eslint: ^8.0.0
 
   '@agaroot/eslint-config-javascript@2.0.7':
     resolution: {integrity: sha512-x5vVUVBSWuqQe9cvoUQe8T/EHYN7vpC5E1ZPySKgpHnwX5I67z74IeIffL06+8OqafFP+oI2K6fNixV0JZ5NJQ==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-javascript.
     peerDependencies:
       '@agaroot/eslint-config-common': 3.0.6
       eslint: ^8.0.0
 
   '@agaroot/eslint-config-next@3.0.9':
     resolution: {integrity: sha512-80X2Q+zrASLGh2SwYLs2/7PuBJuwOtyebPOUReoyAip4P2nwjwEvDMMWDjphnFlCprQBy29pCl718nGSbYNm5w==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-next.
     peerDependencies:
       '@agaroot/eslint-config-common': 3.0.6
       '@agaroot/eslint-config-javascript': 2.0.7
@@ -336,6 +340,7 @@ packages:
 
   '@agaroot/eslint-config-react@3.0.9':
     resolution: {integrity: sha512-Fzhu548we2igTa1MIhHHcP2B+iuDZhNwlEPnvbLJ2/QRaaj82GDckxOtleAWGxFzX7a56NyRGo0wvSdWYLWDEQ==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-react.
     peerDependencies:
       '@agaroot/eslint-config-common': 3.0.6
       '@agaroot/eslint-config-javascript': 2.0.7
@@ -347,6 +352,7 @@ packages:
 
   '@agaroot/eslint-config-style@2.0.9':
     resolution: {integrity: sha512-NnZNq8nIpXLt5AKWplsdp98pZ3UR4HsImTlvc/jlufkoaxond+zxNfFWpU2pCVfWsdG1XtA6wnNDKOz8c/2fhA==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-style.
     peerDependencies:
       '@agaroot/eslint-config-common': 3.0.6
       '@agaroot/eslint-config-javascript': 2.0.7
@@ -358,6 +364,7 @@ packages:
 
   '@agaroot/eslint-config-typescript@2.0.8':
     resolution: {integrity: sha512-WwLDs6ATJq7SAqmYqbhXxNDidZ6+MxV1CA+LVzv3/qDUEgDjQL+KCIreeBKfW4jBr0ruWpmDAEr5uTNl92KZJw==}
+    deprecated: This package was delegated to PrAha. Please use @praha/eslint-config-typescript.
     peerDependencies:
       '@agaroot/eslint-config-common': 3.0.6
       '@agaroot/eslint-config-javascript': 2.0.7
@@ -7709,8 +7716,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.86.0:
-    resolution: {integrity: sha512-jL670AFVPLTILvEjAL165aYM/ZqtZCqT+e6LKiniflRZxSGKu4o/wyHeOmOM6i5kYJHSmF40E4lOZqapDtkF8g==}
+  wrangler@3.86.1:
+    resolution: {integrity: sha512-ujN74lPQCQRsMcvf48WLLZUqOqUbJJzt5+Xm5T3tGrpRJLW+dTB0ffvT/e2DBBvHZ7R52ZzZdm1akyLPsZmZ9Q==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -8837,7 +8844,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.5(@cloudflare/workers-types@4.20241106.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.86.0(@cloudflare/workers-types@4.20241106.0))':
+  '@cloudflare/next-on-pages@1.13.5(@cloudflare/workers-types@4.20241106.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.86.1(@cloudflare/workers-types@4.20241106.0))':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2
@@ -8852,7 +8859,7 @@ snapshots:
       pcre-to-regexp: 1.1.0
       semver: 7.6.3
       vercel: 37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5))
-      wrangler: 3.86.0(@cloudflare/workers-types@4.20241106.0)
+      wrangler: 3.86.1(@cloudflare/workers-types@4.20241106.0)
     optionalDependencies:
       '@cloudflare/workers-types': 4.20241106.0
     transitivePeerDependencies:
@@ -16343,7 +16350,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241106.1
       '@cloudflare/workerd-windows-64': 1.20241106.1
 
-  wrangler@3.86.0(@cloudflare/workers-types@4.20241106.0):
+  wrangler@3.86.1(@cloudflare/workers-types@4.20241106.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@cloudflare/workers-shared': 0.7.1
