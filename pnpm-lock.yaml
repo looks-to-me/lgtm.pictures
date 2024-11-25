@@ -196,8 +196,8 @@ importers:
         specifier: 0.5.5
         version: 0.5.5(@vanilla-extract/css@1.16.1)
       '@vanilla-extract/vite-plugin':
-        specifier: 4.0.17
-        version: 4.0.17(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))
+        specifier: 4.0.18
+        version: 4.0.18(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))
       '@vanilla-extract/webpack-plugin':
         specifier: 2.3.14
         version: 2.3.14(@types/node@20.17.7)(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
@@ -2855,8 +2855,8 @@ packages:
     peerDependencies:
       '@vanilla-extract/css': ^1.0.0
 
-  '@vanilla-extract/vite-plugin@4.0.17':
-    resolution: {integrity: sha512-qyAEmBcwih7E3lMrcFZX1Ph81TQos1FFyxOu5JmNmu/F/g7HkcCXFV897pNKFmXgED/TzuyrFVcIRimg5pPc9A==}
+  '@vanilla-extract/vite-plugin@4.0.18':
+    resolution: {integrity: sha512-j5vJVbvW33THGXG3ZI+nfgeYCknlBEWTJVphZWSAGmLO4XO4690m/iQQg+3gUtla3wvU8eyA2qmJNa05Wa7mVA==}
     peerDependencies:
       vite: ^4.0.3 || ^5.0.0
 
@@ -10757,9 +10757,9 @@ snapshots:
     dependencies:
       '@vanilla-extract/css': 1.16.1
 
-  '@vanilla-extract/vite-plugin@4.0.17(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))':
+  '@vanilla-extract/vite-plugin@4.0.18(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))':
     dependencies:
-      '@vanilla-extract/integration': 7.1.10(@types/node@20.17.7)(terser@5.18.2)
+      '@vanilla-extract/integration': 7.1.11(@types/node@20.17.7)(terser@5.18.2)
       vite: 5.0.11(@types/node@20.17.7)(terser@5.18.2)
     transitivePeerDependencies:
       - '@types/node'
