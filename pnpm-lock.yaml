@@ -184,8 +184,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
       '@vanilla-extract/css':
-        specifier: 1.16.0
-        version: 1.16.0
+        specifier: 1.16.1
+        version: 1.16.1
       '@vanilla-extract/css-utils':
         specifier: 0.1.4
         version: 0.1.4
@@ -194,7 +194,7 @@ importers:
         version: 2.4.6(@types/node@20.17.7)(next@14.2.18(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
       '@vanilla-extract/recipes':
         specifier: 0.5.5
-        version: 0.5.5(@vanilla-extract/css@1.16.0)
+        version: 0.5.5(@vanilla-extract/css@1.16.1)
       '@vanilla-extract/vite-plugin':
         specifier: 4.0.17
         version: 4.0.17(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))
@@ -2833,8 +2833,8 @@ packages:
   '@vanilla-extract/css-utils@0.1.4':
     resolution: {integrity: sha512-3WRxMGa/VQaL32jZqRUpnnoVFSws5iPIUpQr+XlT4jXhtMeKYcA20rFK2k2Amkg04sqrO84A8hNMeABWZQesEg==}
 
-  '@vanilla-extract/css@1.16.0':
-    resolution: {integrity: sha512-05JTbvG1E0IrSZKZ5el2EM9CmAX0XSdsNY+d4aRZxDvYf3/hwxomvFFEz2b/awjgg9yTVHW83Wq19wE4OoTEMg==}
+  '@vanilla-extract/css@1.16.1':
+    resolution: {integrity: sha512-3jKxH5ty/ZjmGoLAx8liY7e87FRCIJfnuufX/K9fQklu0YHP3ClrNisU++LkZuD+GZleqMSAQMF0r8Otln+OPQ==}
 
   '@vanilla-extract/integration@7.1.10':
     resolution: {integrity: sha512-EXe8l0u51ta2H78kksf7gJENkdYnvDW9c+18FUvKfxtjHmpc4KthXnUTuALt5k9wbAjfFakIR4IsqzvOP43cDQ==}
@@ -10660,7 +10660,7 @@ snapshots:
 
   '@vanilla-extract/css-utils@0.1.4': {}
 
-  '@vanilla-extract/css@1.16.0':
+  '@vanilla-extract/css@1.16.1':
     dependencies:
       '@emotion/hash': 0.9.1
       '@vanilla-extract/private': 1.0.6
@@ -10682,7 +10682,7 @@ snapshots:
       '@babel/core': 7.25.2
       '@babel/plugin-syntax-typescript': 7.25.4(@babel/core@7.25.2)
       '@vanilla-extract/babel-plugin-debug-ids': 1.1.0
-      '@vanilla-extract/css': 1.16.0
+      '@vanilla-extract/css': 1.16.1
       dedent: 1.5.3
       esbuild: 0.19.8
       eval: 0.1.8
@@ -10720,9 +10720,9 @@ snapshots:
 
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vanilla-extract/recipes@0.5.5(@vanilla-extract/css@1.16.0)':
+  '@vanilla-extract/recipes@0.5.5(@vanilla-extract/css@1.16.1)':
     dependencies:
-      '@vanilla-extract/css': 1.16.0
+      '@vanilla-extract/css': 1.16.1
 
   '@vanilla-extract/vite-plugin@4.0.17(@types/node@20.17.7)(terser@5.18.2)(vite@5.0.11(@types/node@20.17.7)(terser@5.18.2))':
     dependencies:
