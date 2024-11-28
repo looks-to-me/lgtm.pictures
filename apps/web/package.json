@@ -33,7 +33,7 @@
     "@radix-ui/react-visually-hidden": "1.1.0",
     "@supabase/auth-helpers-nextjs": "0.10.0",
     "@supabase/auth-helpers-react": "0.5.0",
-    "@supabase/supabase-js": "2.46.1",
+    "@supabase/supabase-js": "2.46.2",
     "ahooks": "3.8.1",
     "client-only": "0.0.1",
     "clsx": "2.1.1",
