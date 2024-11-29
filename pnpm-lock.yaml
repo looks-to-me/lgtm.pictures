@@ -145,8 +145,8 @@ importers:
         specifier: 3.0.9
         version: 3.0.9(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(@agaroot/eslint-config-typescript@2.0.8(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)
       '@cloudflare/next-on-pages':
-        specifier: 1.13.5
-        version: 1.13.5(@cloudflare/workers-types@4.20241112.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.91.0(@cloudflare/workers-types@4.20241112.0))
+        specifier: 1.13.6
+        version: 1.13.6(@cloudflare/workers-types@4.20241112.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.91.0(@cloudflare/workers-types@4.20241112.0))
       '@cloudflare/workers-types':
         specifier: 4.20241112.0
         version: 4.20241112.0
@@ -1113,8 +1113,8 @@ packages:
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
 
-  '@cloudflare/next-on-pages@1.13.5':
-    resolution: {integrity: sha512-eKRrI14kCk6kuBIAO6WwMNSvH8fFzkMQj1G95/wLVW2xpUaU0EDxRcQJ0U9aB1tOm/sPWW76Udb92rxyrVJpBw==}
+  '@cloudflare/next-on-pages@1.13.6':
+    resolution: {integrity: sha512-7SrvJ5x5+gKYXRGaKqJU8uE205snzQ07mzYLoauL0+yUQo5AJ6ZdRuwg4OVa+duKdDsoGbaD7pMEn7SDK7XAxg==}
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20240208.0
@@ -9039,7 +9039,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.5(@cloudflare/workers-types@4.20241112.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.91.0(@cloudflare/workers-types@4.20241112.0))':
+  '@cloudflare/next-on-pages@1.13.6(@cloudflare/workers-types@4.20241112.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.91.0(@cloudflare/workers-types@4.20241112.0))':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2
