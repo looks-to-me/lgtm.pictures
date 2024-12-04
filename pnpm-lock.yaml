@@ -211,8 +211,8 @@ importers:
         specifier: 16.4.7
         version: 16.4.7
       drizzle-kit:
-        specifier: 0.28.1
-        version: 0.28.1
+        specifier: 0.29.1
+        version: 0.29.1
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -4087,8 +4087,8 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  drizzle-kit@0.28.1:
-    resolution: {integrity: sha512-JimOV+ystXTWMgZkLHYHf2w3oS28hxiH1FR0dkmJLc7GHzdGJoJAQtQS5DRppnabsRZwE2U1F6CuezVBgmsBBQ==}
+  drizzle-kit@0.29.1:
+    resolution: {integrity: sha512-OvHL8RVyYiPR3LLRE3SHdcON8xGXl+qMfR9uTTnFWBPIqVk/3NWYZPb7nfpM1Bhix3H+BsxqPyyagG7YZ+Z63A==}
     hasBin: true
 
   drizzle-orm@0.36.4:
@@ -12355,7 +12355,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  drizzle-kit@0.28.1:
+  drizzle-kit@0.29.1:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.5.5
