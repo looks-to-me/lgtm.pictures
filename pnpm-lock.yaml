@@ -93,8 +93,8 @@ importers:
         specifier: 2.46.2
         version: 2.46.2
       ahooks:
-        specifier: 3.8.1
-        version: 3.8.1(react@18.3.1)
+        specifier: 3.8.2
+        version: 3.8.2(react@18.3.1)
       client-only:
         specifier: 0.0.1
         version: 0.0.1
@@ -1073,10 +1073,6 @@ packages:
 
   '@babel/regjsgen@0.8.0':
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
-
-  '@babel/runtime@7.23.2':
-    resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.25.6':
     resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
@@ -3189,8 +3185,8 @@ packages:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
 
-  ahooks@3.8.1:
-    resolution: {integrity: sha512-JoP9+/RWO7MnI/uSKdvQ8WB10Y3oo1PjLv+4Sv4Vpm19Z86VUMdXh+RhWvMGxZZs06sq2p0xVtFk8Oh5ZObsoA==}
+  ahooks@3.8.2:
+    resolution: {integrity: sha512-iuYD3PWopdw9HqH++3ul6/Oxl9Q9/tP+np4yiYd0mIzN3QfDKnyII28MWUcmSkaHF415R6bUcrl0vD/80NNogg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -7370,9 +7366,6 @@ packages:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
-  tslib@2.5.3:
-    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
-
   tslib@2.7.0:
     resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
 
@@ -9014,10 +9007,6 @@ snapshots:
       - supports-color
 
   '@babel/regjsgen@0.8.0': {}
-
-  '@babel/runtime@7.23.2':
-    dependencies:
-      regenerator-runtime: 0.14.0
 
   '@babel/runtime@7.25.6':
     dependencies:
@@ -11374,9 +11363,9 @@ snapshots:
       - supports-color
     optional: true
 
-  ahooks@3.8.1(react@18.3.1):
+  ahooks@3.8.2(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.6
       dayjs: 1.11.9
       intersection-observer: 0.12.2
       js-cookie: 3.0.5
@@ -11385,7 +11374,7 @@ snapshots:
       react-fast-compare: 3.2.2
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
-      tslib: 2.5.3
+      tslib: 2.7.0
 
   ajv-formats@2.1.1(ajv@8.12.0):
     optionalDependencies:
@@ -16017,8 +16006,6 @@ snapshots:
       json5: 2.2.3
       minimist: 1.2.8
       strip-bom: 3.0.0
-
-  tslib@2.5.3: {}
 
   tslib@2.7.0: {}
 
