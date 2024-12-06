@@ -109,7 +109,7 @@ importers:
         version: 4.3.1
       drizzle-orm:
         specifier: 0.37.0
-        version: 0.37.0(@cloudflare/workers-types@4.20241202.0)(@libsql/client-wasm@0.14.0)(@types/react@18.3.13)(better-sqlite3@11.6.0)(react@18.3.1)
+        version: 0.37.0(@cloudflare/workers-types@4.20241205.0)(@libsql/client-wasm@0.14.0)(@types/react@18.3.13)(better-sqlite3@11.6.0)(react@18.3.1)
       lucide-react:
         specifier: 0.468.0
         version: 0.468.0(react@18.3.1)
@@ -146,10 +146,10 @@ importers:
         version: 3.0.9(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(@agaroot/eslint-config-typescript@2.0.8(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@agaroot/eslint-config-javascript@2.0.7(@agaroot/eslint-config-common@3.0.6(eslint@8.57.1))(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)
       '@cloudflare/next-on-pages':
         specifier: 1.13.6
-        version: 1.13.6(@cloudflare/workers-types@4.20241202.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.92.0(@cloudflare/workers-types@4.20241202.0))
+        version: 1.13.6(@cloudflare/workers-types@4.20241205.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.92.0(@cloudflare/workers-types@4.20241205.0))
       '@cloudflare/workers-types':
-        specifier: 4.20241202.0
-        version: 4.20241202.0
+        specifier: 4.20241205.0
+        version: 4.20241205.0
       '@sqlite.org/sqlite-wasm':
         specifier: 3.42.0-build7
         version: 3.42.0-build7
@@ -239,7 +239,7 @@ importers:
         version: 2.1.8(@edge-runtime/vm@3.2.0)(@types/node@20.17.9)(jsdom@25.0.0)(terser@5.18.2)
       wrangler:
         specifier: 3.92.0
-        version: 3.92.0(@cloudflare/workers-types@4.20241202.0)
+        version: 3.92.0(@cloudflare/workers-types@4.20241205.0)
 
   apps/worker-cdn:
     dependencies:
@@ -251,8 +251,8 @@ importers:
         version: 0.42.1(typescript@5.7.2)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20241202.0
-        version: 4.20241202.0
+        specifier: 4.20241205.0
+        version: 4.20241205.0
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -261,7 +261,7 @@ importers:
         version: 5.7.2
       wrangler:
         specifier: 3.92.0
-        version: 3.92.0(@cloudflare/workers-types@4.20241202.0)
+        version: 3.92.0(@cloudflare/workers-types@4.20241205.0)
 
   apps/worker-image-overlay:
     dependencies:
@@ -270,8 +270,8 @@ importers:
         version: 0.42.1(typescript@5.7.2)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20241202.0
-        version: 4.20241202.0
+        specifier: 4.20241205.0
+        version: 4.20241205.0
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -280,13 +280,13 @@ importers:
         version: 5.7.2
       wrangler:
         specifier: 3.92.0
-        version: 3.92.0(@cloudflare/workers-types@4.20241202.0)
+        version: 3.92.0(@cloudflare/workers-types@4.20241205.0)
 
   packages/image-cache:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20241202.0
-        version: 4.20241202.0
+        specifier: 4.20241205.0
+        version: 4.20241205.0
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -1154,8 +1154,8 @@ packages:
     resolution: {integrity: sha512-56w4pL5D6ODw7+SieMgdwrwNyyT7tY8H4UPD4/95TSBVjqDcMPq0Dr+D4rJ+nHK+290o4ZnSiOOiKqRMqy6tPg==}
     engines: {node: '>=16.7.0'}
 
-  '@cloudflare/workers-types@4.20241202.0':
-    resolution: {integrity: sha512-ts4JD6Wih62SDmlc+OcnN1Db/DgEBcl+BUpJr7ht7pgWP81PCLyPcomgDXIeAqt2NLiOIOMMkYQZ1ZtWDo3/8A==}
+  '@cloudflare/workers-types@4.20241205.0':
+    resolution: {integrity: sha512-pj1VKRHT/ScQbHOIMFODZaNAlJHQHdBSZXNIdr9ebJzwBff9Qz8VdqhbhggV7f+aUEh8WSbrsPIo4a+WtgjUvw==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -9021,7 +9021,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.6(@cloudflare/workers-types@4.20241202.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.92.0(@cloudflare/workers-types@4.20241202.0))':
+  '@cloudflare/next-on-pages@1.13.6(@cloudflare/workers-types@4.20241205.0)(vercel@37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.92.0(@cloudflare/workers-types@4.20241205.0))':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2
@@ -9036,9 +9036,9 @@ snapshots:
       pcre-to-regexp: 1.1.0
       semver: 7.6.3
       vercel: 37.14.0(@swc/core@1.7.24(@swc/helpers@0.5.5))
-      wrangler: 3.92.0(@cloudflare/workers-types@4.20241202.0)
+      wrangler: 3.92.0(@cloudflare/workers-types@4.20241205.0)
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20241202.0
+      '@cloudflare/workers-types': 4.20241205.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -9064,7 +9064,7 @@ snapshots:
       mime: 3.0.0
       zod: 3.22.4
 
-  '@cloudflare/workers-types@4.20241202.0': {}
+  '@cloudflare/workers-types@4.20241205.0': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -12294,9 +12294,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.37.0(@cloudflare/workers-types@4.20241202.0)(@libsql/client-wasm@0.14.0)(@types/react@18.3.13)(better-sqlite3@11.6.0)(react@18.3.1):
+  drizzle-orm@0.37.0(@cloudflare/workers-types@4.20241205.0)(@libsql/client-wasm@0.14.0)(@types/react@18.3.13)(better-sqlite3@11.6.0)(react@18.3.1):
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20241202.0
+      '@cloudflare/workers-types': 4.20241205.0
       '@libsql/client-wasm': 0.14.0
       '@types/react': 18.3.13
       better-sqlite3: 11.6.0
@@ -16548,7 +16548,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241106.2
       '@cloudflare/workerd-windows-64': 1.20241106.2
 
-  wrangler@3.92.0(@cloudflare/workers-types@4.20241202.0):
+  wrangler@3.92.0(@cloudflare/workers-types@4.20241205.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@cloudflare/workers-shared': 0.9.1
@@ -16569,7 +16569,7 @@ snapshots:
       workerd: 1.20241106.2
       xxhash-wasm: 1.0.2
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20241202.0
+      '@cloudflare/workers-types': 4.20241205.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
