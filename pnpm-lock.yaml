@@ -93,8 +93,8 @@ importers:
         specifier: 2.46.2
         version: 2.46.2
       ahooks:
-        specifier: 3.8.3
-        version: 3.8.3(react@18.3.1)
+        specifier: 3.8.4
+        version: 3.8.4(react@18.3.1)
       client-only:
         specifier: 0.0.1
         version: 0.0.1
@@ -3155,8 +3155,8 @@ packages:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
 
-  ahooks@3.8.3:
-    resolution: {integrity: sha512-wVRofxuu8FruPVdeYsvLfmJuOCHzJta554S8o3/Jva2D4+zRp3f+QZGUum7HYlVokGZpkDMYw8ia40CO8hY5vQ==}
+  ahooks@3.8.4:
+    resolution: {integrity: sha512-39wDEw2ZHvypaT14EpMMk4AzosHWt0z9bulY0BeDsvc9PqJEV+Kjh/4TZfftSsotBMq52iYIOFPd3PR56e0ZJg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -11304,7 +11304,7 @@ snapshots:
       - supports-color
     optional: true
 
-  ahooks@3.8.3(react@18.3.1):
+  ahooks@3.8.4(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.25.6
       dayjs: 1.11.9
