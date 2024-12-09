@@ -85,13 +85,13 @@ importers:
         version: 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@supabase/auth-helpers-nextjs':
         specifier: 0.10.0
-        version: 0.10.0(@supabase/supabase-js@2.47.1)
+        version: 0.10.0(@supabase/supabase-js@2.47.2)
       '@supabase/auth-helpers-react':
         specifier: 0.5.0
-        version: 0.5.0(@supabase/supabase-js@2.47.1)
+        version: 0.5.0(@supabase/supabase-js@2.47.2)
       '@supabase/supabase-js':
-        specifier: 2.47.1
-        version: 2.47.1
+        specifier: 2.47.2
+        version: 2.47.2
       ahooks:
         specifier: 3.8.4
         version: 3.8.4(react@18.3.1)
@@ -2549,8 +2549,8 @@ packages:
     peerDependencies:
       '@supabase/supabase-js': ^2.39.8
 
-  '@supabase/auth-js@2.65.1':
-    resolution: {integrity: sha512-IA7i2Xq2SWNCNMKxwmPlHafBQda0qtnFr8QnyyBr+KaSxoXXqEzFCnQ1dGTy6bsZjVBgXu++o3qrDypTspaAPw==}
+  '@supabase/auth-js@2.66.1':
+    resolution: {integrity: sha512-kOW+04SuDXmP2jRX9JL1Rgzduj8BcOG1qC3RaWdZsxnv89svNCdLRv8PfXW3QPKJdw0k1jF30OlQDPkzbDEL9w==}
 
   '@supabase/functions-js@2.4.3':
     resolution: {integrity: sha512-sOLXy+mWRyu4LLv1onYydq+10mNRQ4rzqQxNhbrKLTLTcdcmS9hbWif0bGz/NavmiQfPs4ZcmQJp4WqOXlR4AQ==}
@@ -2568,8 +2568,8 @@ packages:
   '@supabase/storage-js@2.7.1':
     resolution: {integrity: sha512-asYHcyDR1fKqrMpytAS1zjyEfvxuOIp1CIXX7ji4lHHcJKqyk+sLl/Vxgm4sN6u8zvuUtae9e4kDxQP2qrwWBA==}
 
-  '@supabase/supabase-js@2.47.1':
-    resolution: {integrity: sha512-Q5zBX3BhK4tIFE6W8TK7NP29G9XCX8nzMydHONI8e/6HjYnKmUyNf33rsTTwGVVlXz2ruzJKO+EX4wuwD21Q4g==}
+  '@supabase/supabase-js@2.47.2':
+    resolution: {integrity: sha512-BdP5hY29eCROJRV61WCM+OzcTSjaSzZe0H+2l88tOwmTG+1XqCiVYtZnUNIh12V8g5gdmQL5urp1pSYARbl38A==}
 
   '@swc/core-darwin-arm64@1.7.24':
     resolution: {integrity: sha512-s0k09qAcsoa8jIncwgRRd43VApYqXu28R4OmICtDffV4S01HtsRLRarXsMuLutoZk3tbxqitep+A8MPBuqNgdg==}
@@ -10421,22 +10421,22 @@ snapshots:
       - supports-color
       - typescript
 
-  '@supabase/auth-helpers-nextjs@0.10.0(@supabase/supabase-js@2.47.1)':
+  '@supabase/auth-helpers-nextjs@0.10.0(@supabase/supabase-js@2.47.2)':
     dependencies:
-      '@supabase/auth-helpers-shared': 0.7.0(@supabase/supabase-js@2.47.1)
-      '@supabase/supabase-js': 2.47.1
+      '@supabase/auth-helpers-shared': 0.7.0(@supabase/supabase-js@2.47.2)
+      '@supabase/supabase-js': 2.47.2
       set-cookie-parser: 2.6.0
 
-  '@supabase/auth-helpers-react@0.5.0(@supabase/supabase-js@2.47.1)':
+  '@supabase/auth-helpers-react@0.5.0(@supabase/supabase-js@2.47.2)':
     dependencies:
-      '@supabase/supabase-js': 2.47.1
+      '@supabase/supabase-js': 2.47.2
 
-  '@supabase/auth-helpers-shared@0.7.0(@supabase/supabase-js@2.47.1)':
+  '@supabase/auth-helpers-shared@0.7.0(@supabase/supabase-js@2.47.2)':
     dependencies:
-      '@supabase/supabase-js': 2.47.1
+      '@supabase/supabase-js': 2.47.2
       jose: 4.14.4
 
-  '@supabase/auth-js@2.65.1':
+  '@supabase/auth-js@2.66.1':
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
@@ -10466,9 +10466,9 @@ snapshots:
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
-  '@supabase/supabase-js@2.47.1':
+  '@supabase/supabase-js@2.47.2':
     dependencies:
-      '@supabase/auth-js': 2.65.1
+      '@supabase/auth-js': 2.66.1
       '@supabase/functions-js': 2.4.3
       '@supabase/node-fetch': 2.6.15
       '@supabase/postgrest-js': 1.16.3
