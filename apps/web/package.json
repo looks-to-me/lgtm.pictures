@@ -73,7 +73,7 @@
     "@vanilla-extract/vite-plugin": "4.0.18",
     "@vanilla-extract/webpack-plugin": "2.3.15",
     "@vitejs/plugin-react": "4.3.4",
-    "better-sqlite3": "11.6.0",
+    "better-sqlite3": "11.7.0",
     "dotenv": "16.4.7",
     "drizzle-kit": "0.29.1",
     "eslint": "8.57.1",
