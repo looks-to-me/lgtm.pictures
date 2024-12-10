@@ -32,7 +32,7 @@ export const PostCreateForm: FC<PostCreateFormProps> = ({
       const result = await submitPost(formData);
       if (result.type === 'error') {
         if (result.reason === 'unauthorized') router.push('/login');
-        throw result.message;
+        throw new Error(result.message);
       }
 
       inputRef.current?.reset();
@@ -41,7 +41,7 @@ export const PostCreateForm: FC<PostCreateFormProps> = ({
     }, {
       loading: 'Submitting...',
       success: (result: string) => result,
-      error: (error: string) => error,
+      error: (error: Error) => error.message,
     });
   }, [router]);
 

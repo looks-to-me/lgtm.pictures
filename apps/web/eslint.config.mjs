@@ -1,6 +1,6 @@
-import { define } from '@agaroot/eslint-config-definer';
-import { next } from '@agaroot/eslint-config-next';
-import { react } from '@agaroot/eslint-config-react';
+import { define } from '@praha/eslint-config-definer';
+import { next } from '@praha/eslint-config-next';
+import { react } from '@praha/eslint-config-react';
 
 import { config as base } from '../../eslint.config.mjs';
 

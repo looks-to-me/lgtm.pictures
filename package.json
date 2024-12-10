@@ -11,15 +11,15 @@
     "lint:type": "turbo run lint:type"
   },
   "devDependencies": {
-    "@agaroot/eslint-config-common": "3.0.6",
-    "@agaroot/eslint-config-definer": "1.0.5",
-    "@agaroot/eslint-config-javascript": "2.0.7",
-    "@agaroot/eslint-config-style": "2.0.9",
-    "@agaroot/eslint-config-typescript": "2.0.8",
+    "@praha/eslint-config-common": "4.0.0",
+    "@praha/eslint-config-definer": "2.0.0",
+    "@praha/eslint-config-javascript": "3.0.0",
+    "@praha/eslint-config-style": "3.0.1",
+    "@praha/eslint-config-typescript": "3.0.1",
     "@scaffdog/types": "4.1.0",
     "@tsconfig/strictest": "2.0.5",
     "@vitest/eslint-plugin": "1.1.4",
-    "eslint": "8.57.1",
+    "eslint": "9.16.0",
     "scaffdog": "4.1.0",
     "turbo": "2.3.3"
   },

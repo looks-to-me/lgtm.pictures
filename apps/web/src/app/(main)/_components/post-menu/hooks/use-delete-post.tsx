@@ -30,13 +30,13 @@ export const useDeletePost = (post: Post) => {
         }
         case 'error': {
           if (result.reason === 'unauthorized') router.push('/login');
-          throw result.message;
+          throw new Error(result.message);
         }
       }
     }, {
       loading: 'Deleting...',
       success: (result: string) => result,
-      error: (error: string) => error,
+      error: (error: Error) => error.message,
     });
   }, [openAlertDialog, post.id, router]);
 };

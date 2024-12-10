@@ -9,7 +9,9 @@ export const mergeProps = <T extends Record<string, unknown>[]>(...props: T) => 
 
       if (/^on[A-Z]/.test(key)) {
         property[key] = (...arguments_: unknown[]) => {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
           if (typeof baseValue === 'function') baseValue(...arguments_);
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
           if (typeof value === 'function') value(...arguments_);
         };
       }
