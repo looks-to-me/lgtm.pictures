@@ -37,7 +37,7 @@
     "ahooks": "3.8.4",
     "client-only": "0.0.1",
     "clsx": "2.1.1",
-    "date-fns": "3.6.0",
+    "date-fns": "4.1.0",
     "deepmerge": "4.3.1",
     "drizzle-orm": "0.38.1",
     "lucide-react": "0.468.0",
