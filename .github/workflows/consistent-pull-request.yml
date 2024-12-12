@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Check pr label name
-        uses: agaroot-technologies/action-restrict-pr-label@7afc265323238e3b73f016e565f9c81d5e67362d # v1.0.0
+        uses: praha-inc/action-restrict-pr-label@7afc265323238e3b73f016e565f9c81d5e67362d # v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -26,14 +26,14 @@ jobs:
             preview <- deps/* [deps]
 
       - name: Check head branch name
-        uses: agaroot-technologies/action-restrict-head-branch@48b7777bbd99e4702abe38e4a996fcd5a2453667 # v1.0.0
+        uses: praha-inc/action-restrict-head-branch@48b7777bbd99e4702abe38e4a996fcd5a2453667 # v1.0.0
         with:
           rules: |
             preview
             feature/* bugfix/* refactor/* chore/* deps/*
 
       - name: Check base branch name
-        uses: agaroot-technologies/action-restrict-base-branch@d0c225fdd8eab6e1e4b4e455e0877003c33078a2 # v1.0.2
+        uses: praha-inc/action-restrict-base-branch@d0c225fdd8eab6e1e4b4e455e0877003c33078a2 # v1.0.2
         with:
           rules: |
             main <- preview

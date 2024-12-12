@@ -35,7 +35,7 @@ export const useMuteUser = ({ muteUserId, muteUserName }: Props) => {
       }
       case 'error': {
         if (result.reason === 'unauthorized') router.push('/login');
-        throw result.message;
+        throw new Error(result.message);
       }
     }
   }, [muteUserId, router]);
@@ -47,7 +47,7 @@ export const useMuteUser = ({ muteUserId, muteUserName }: Props) => {
     toast.promise(mute, {
       loading: 'Muting...',
       success: (result: string) => result,
-      error: (error: string) => error,
+      error: (error: Error) => error.message,
     });
   }, [confirm, mute]);
 };

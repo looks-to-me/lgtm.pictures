@@ -86,8 +86,8 @@ export const ApplicationNavigation: FC<ApplicationNavigationProps> = ({
               © {getYear(new Date())} PrAha, Inc.
             </small>
             <div className={styles.links}>
-              <a href="/privacy">Privacy Policy</a>
-              <a href="/terms">Terms Of Use</a>
+              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/terms">Terms Of Use</Link>
             </div>
             <div className={styles.links}>
               <a href="https://www.praha-inc.com/" target="_blank">PrAha</a>

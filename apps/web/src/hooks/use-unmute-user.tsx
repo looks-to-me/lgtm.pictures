@@ -35,7 +35,7 @@ export const useUnmuteUser = ({ unmuteUserId, unmuteUserName }: Props) => {
       }
       case 'error': {
         if (result.reason === 'unauthorized') router.push('/login');
-        throw result.message;
+        throw new Error(result.message);
       }
     }
   }, [router, unmuteUserId]);
@@ -47,7 +47,7 @@ export const useUnmuteUser = ({ unmuteUserId, unmuteUserName }: Props) => {
     toast.promise(unmute, {
       loading: 'Unmuting...',
       success: (result: string) => result,
-      error: (error: string) => error,
+      error: (error: Error) => error.message,
     });
   }, [unmute, confirm]);
 };

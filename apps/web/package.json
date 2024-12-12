@@ -50,11 +50,11 @@
     "valibot": "0.42.1"
   },
   "devDependencies": {
-    "@agaroot/eslint-config-definer": "1.0.5",
-    "@agaroot/eslint-config-next": "3.0.9",
-    "@agaroot/eslint-config-react": "3.0.9",
     "@cloudflare/next-on-pages": "1.13.7",
     "@cloudflare/workers-types": "4.20241205.0",
+    "@praha/eslint-config-definer": "2.0.0",
+    "@praha/eslint-config-next": "4.0.1",
+    "@praha/eslint-config-react": "4.0.1",
     "@sqlite.org/sqlite-wasm": "3.42.0-build7",
     "@storybook/addon-essentials": "8.3.2",
     "@storybook/addon-interactions": "8.3.2",
@@ -76,7 +76,7 @@
     "better-sqlite3": "11.7.0",
     "dotenv": "16.4.7",
     "drizzle-kit": "0.30.0",
-    "eslint": "8.57.1",
+    "eslint": "9.16.0",
     "mini-css-extract-plugin": "2.9.2",
     "miniflare": "3.20241205.0",
     "rimraf": "6.0.1",
