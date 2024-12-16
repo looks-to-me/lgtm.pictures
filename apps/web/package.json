@@ -53,7 +53,7 @@
     "@cloudflare/next-on-pages": "1.13.7",
     "@cloudflare/workers-types": "4.20241205.0",
     "@praha/eslint-config-definer": "2.0.1",
-    "@praha/eslint-config-next": "4.0.1",
+    "@praha/eslint-config-next": "4.0.2",
     "@praha/eslint-config-react": "4.0.1",
     "@sqlite.org/sqlite-wasm": "3.42.0-build7",
     "@storybook/addon-essentials": "8.4.7",

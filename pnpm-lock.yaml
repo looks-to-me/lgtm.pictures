@@ -145,8 +145,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-next':
-        specifier: 4.0.1
-        version: 4.0.1(bndbm2kjimnwwgoo462llarj74)
+        specifier: 4.0.2
+        version: 4.0.2(bndbm2kjimnwwgoo462llarj74)
       '@praha/eslint-config-react':
         specifier: 4.0.1
         version: 4.0.1(puhemu76cew26fxzbi44uufs2a)
@@ -1774,13 +1774,13 @@ packages:
       '@praha/eslint-config-common': 4.0.1
       eslint: ^9.0.0
 
-  '@praha/eslint-config-next@4.0.1':
-    resolution: {integrity: sha512-gzv7rrGjtMr1evGhv7qzAUCcfmJAjORuO/nYGlP9a+L23kyZ/g/GA6q4vVV+RpN2Hi7OXpGyE+6CjVav5yAX6A==}
+  '@praha/eslint-config-next@4.0.2':
+    resolution: {integrity: sha512-w4SfOWOdjE3Vc1eGcuuuMgTwm0ujEZwQDjIbcH0IPluUSN8md52lnLKlUDrdH1LfSriWHuPSIuYOAU+CXy/OkA==}
     peerDependencies:
-      '@praha/eslint-config-common': 4.0.0
-      '@praha/eslint-config-javascript': 3.0.0
-      '@praha/eslint-config-react': 4.0.1
-      '@praha/eslint-config-typescript': 3.0.1
+      '@praha/eslint-config-common': 4.0.1
+      '@praha/eslint-config-javascript': 3.0.1
+      '@praha/eslint-config-react': 4.0.2
+      '@praha/eslint-config-typescript': 3.0.2
       eslint: ^9.0.0
     peerDependenciesMeta:
       '@praha/eslint-config-typescript':
@@ -9091,12 +9091,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@praha/eslint-config-next@4.0.1(bndbm2kjimnwwgoo462llarj74)':
+  '@praha/eslint-config-next@4.0.2(bndbm2kjimnwwgoo462llarj74)':
     dependencies:
       '@eslint/compat': 1.2.4(eslint@9.16.0(jiti@1.21.6))
       '@next/eslint-plugin-next': 15.0.4
       '@praha/eslint-config-common': 4.0.1(eslint@9.16.0(jiti@1.21.6))
-      '@praha/eslint-config-definer': 2.0.0(eslint@9.16.0(jiti@1.21.6))
+      '@praha/eslint-config-definer': 2.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-javascript': 3.0.1(@praha/eslint-config-common@4.0.1(eslint@9.16.0(jiti@1.21.6)))(@typescript-eslint/eslint-plugin@8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@praha/eslint-config-react': 4.0.1(puhemu76cew26fxzbi44uufs2a)
       eslint: 9.16.0(jiti@1.21.6)
