@@ -146,10 +146,10 @@ importers:
         version: 2.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-next':
         specifier: 4.0.2
-        version: 4.0.2(bndbm2kjimnwwgoo462llarj74)
+        version: 4.0.2(fofeo5rujazs6ghricw6tg2xwe)
       '@praha/eslint-config-react':
-        specifier: 4.0.1
-        version: 4.0.1(puhemu76cew26fxzbi44uufs2a)
+        specifier: 4.0.2
+        version: 4.0.2(puhemu76cew26fxzbi44uufs2a)
       '@sqlite.org/sqlite-wasm':
         specifier: 3.42.0-build7
         version: 3.42.0-build7
@@ -1786,12 +1786,12 @@ packages:
       '@praha/eslint-config-typescript':
         optional: true
 
-  '@praha/eslint-config-react@4.0.1':
-    resolution: {integrity: sha512-hAiG7VqoYZVByjJIDJpHoYBmoDLUDe9RxQ4PczwfRXr2eUklIS1Vuhg2mRhkWJ1HkcCP8rD8I9nn9prWcf2tcA==}
+  '@praha/eslint-config-react@4.0.2':
+    resolution: {integrity: sha512-fQMNWMHP8seXCiIbkdHHsN6GDHv/w6ra3JfG1W64PpVGag3dRcHwPpGIWqwfKVNXCNn/QGfZRj1C/foe+CCJsA==}
     peerDependencies:
-      '@praha/eslint-config-common': 4.0.0
-      '@praha/eslint-config-javascript': 3.0.0
-      '@praha/eslint-config-typescript': 3.0.1
+      '@praha/eslint-config-common': 4.0.1
+      '@praha/eslint-config-javascript': 3.0.1
+      '@praha/eslint-config-typescript': 3.0.2
       eslint: ^9.0.0
     peerDependenciesMeta:
       '@praha/eslint-config-typescript':
@@ -9091,22 +9091,22 @@ snapshots:
       - supports-color
       - typescript
 
-  '@praha/eslint-config-next@4.0.2(bndbm2kjimnwwgoo462llarj74)':
+  '@praha/eslint-config-next@4.0.2(fofeo5rujazs6ghricw6tg2xwe)':
     dependencies:
       '@eslint/compat': 1.2.4(eslint@9.16.0(jiti@1.21.6))
       '@next/eslint-plugin-next': 15.0.4
       '@praha/eslint-config-common': 4.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-definer': 2.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-javascript': 3.0.1(@praha/eslint-config-common@4.0.1(eslint@9.16.0(jiti@1.21.6)))(@typescript-eslint/eslint-plugin@8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
-      '@praha/eslint-config-react': 4.0.1(puhemu76cew26fxzbi44uufs2a)
+      '@praha/eslint-config-react': 4.0.2(puhemu76cew26fxzbi44uufs2a)
       eslint: 9.16.0(jiti@1.21.6)
     optionalDependencies:
       '@praha/eslint-config-typescript': 3.0.1(@praha/eslint-config-common@4.0.1(eslint@9.16.0(jiti@1.21.6)))(@praha/eslint-config-javascript@3.0.1(@praha/eslint-config-common@4.0.1(eslint@9.16.0(jiti@1.21.6)))(@typescript-eslint/eslint-plugin@8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6)))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
 
-  '@praha/eslint-config-react@4.0.1(puhemu76cew26fxzbi44uufs2a)':
+  '@praha/eslint-config-react@4.0.2(puhemu76cew26fxzbi44uufs2a)':
     dependencies:
       '@praha/eslint-config-common': 4.0.1(eslint@9.16.0(jiti@1.21.6))
-      '@praha/eslint-config-definer': 2.0.0(eslint@9.16.0(jiti@1.21.6))
+      '@praha/eslint-config-definer': 2.0.1(eslint@9.16.0(jiti@1.21.6))
       '@praha/eslint-config-javascript': 3.0.1(@praha/eslint-config-common@4.0.1(eslint@9.16.0(jiti@1.21.6)))(@typescript-eslint/eslint-plugin@8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       eslint: 9.16.0(jiti@1.21.6)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.16.0(jiti@1.21.6))
