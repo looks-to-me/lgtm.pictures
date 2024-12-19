@@ -137,7 +137,7 @@ importers:
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: 1.13.7
-        version: 1.13.7(@cloudflare/workers-types@4.20241218.0)(vercel@39.2.2(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.95.0(@cloudflare/workers-types@4.20241218.0))
+        version: 1.13.7(@cloudflare/workers-types@4.20241218.0)(vercel@39.2.2(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.98.0(@cloudflare/workers-types@4.20241218.0))
       '@cloudflare/workers-types':
         specifier: 4.20241218.0
         version: 4.20241218.0
@@ -238,8 +238,8 @@ importers:
         specifier: 2.1.8
         version: 2.1.8(@edge-runtime/vm@3.2.0)(@types/node@22.10.2)(jsdom@25.0.0)(terser@5.18.2)
       wrangler:
-        specifier: 3.95.0
-        version: 3.95.0(@cloudflare/workers-types@4.20241218.0)
+        specifier: 3.98.0
+        version: 3.98.0(@cloudflare/workers-types@4.20241218.0)
 
   apps/worker-cdn:
     dependencies:
@@ -260,8 +260,8 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
       wrangler:
-        specifier: 3.95.0
-        version: 3.95.0(@cloudflare/workers-types@4.20241218.0)
+        specifier: 3.98.0
+        version: 3.98.0(@cloudflare/workers-types@4.20241218.0)
 
   apps/worker-image-overlay:
     dependencies:
@@ -279,8 +279,8 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
       wrangler:
-        specifier: 3.95.0
-        version: 3.95.0(@cloudflare/workers-types@4.20241218.0)
+        specifier: 3.98.0
+        version: 3.98.0(@cloudflare/workers-types@4.20241218.0)
 
   packages/image-cache:
     devDependencies:
@@ -1058,10 +1058,6 @@ packages:
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
-
-  '@cloudflare/workers-shared@0.11.0':
-    resolution: {integrity: sha512-A+lQ8xp7992qSeMmuQ0ssL6CPmm+ZmAv6Ddikan0n1jjpMAic+97l7xtVIsswSn9iLMFPYQ9uNN/8Fl0AgARIQ==}
-    engines: {node: '>=16.7.0'}
 
   '@cloudflare/workers-types@4.20241218.0':
     resolution: {integrity: sha512-Y0brjmJHcAZBXOPI7lU5hbiXglQWniA1kQjot2ata+HFimyjPPcz+4QWBRrmWcMPo0OadR2Vmac7WStDLpvz0w==}
@@ -7445,8 +7441,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.95.0:
-    resolution: {integrity: sha512-3w5852i3FNyDz421K2Qk4v5L8jjwegO5O8E1+VAQmjnm82HFNxpIRUBq0bmM7CTLvOPI/Jjcmj/eAWjQBL7QYg==}
+  wrangler@3.98.0:
+    resolution: {integrity: sha512-s3R2Jdai+sIAQ1Fd+WzEK5fVxYHxAN7qbjYPXGx75dxM9/O2p+CT666PYLROGIk4sfAeLU4eVp9iqfVDuiQESw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -8537,7 +8533,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20241218.0)(vercel@39.2.2(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.95.0(@cloudflare/workers-types@4.20241218.0))':
+  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20241218.0)(vercel@39.2.2(@swc/core@1.7.24(@swc/helpers@0.5.5)))(wrangler@3.98.0(@cloudflare/workers-types@4.20241218.0))':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2
@@ -8552,7 +8548,7 @@ snapshots:
       pcre-to-regexp: 1.1.0
       semver: 7.6.3
       vercel: 39.2.2(@swc/core@1.7.24(@swc/helpers@0.5.5))
-      wrangler: 3.95.0(@cloudflare/workers-types@4.20241218.0)
+      wrangler: 3.98.0(@cloudflare/workers-types@4.20241218.0)
     optionalDependencies:
       '@cloudflare/workers-types': 4.20241218.0
     transitivePeerDependencies:
@@ -8574,11 +8570,6 @@ snapshots:
 
   '@cloudflare/workerd-windows-64@1.20241205.0':
     optional: true
-
-  '@cloudflare/workers-shared@0.11.0':
-    dependencies:
-      mime: 3.0.0
-      zod: 3.22.4
 
   '@cloudflare/workers-types@4.20241218.0': {}
 
@@ -15577,10 +15568,9 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241205.0
       '@cloudflare/workerd-windows-64': 1.20241205.0
 
-  wrangler@3.95.0(@cloudflare/workers-types@4.20241218.0):
+  wrangler@3.98.0(@cloudflare/workers-types@4.20241218.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
-      '@cloudflare/workers-shared': 0.11.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
