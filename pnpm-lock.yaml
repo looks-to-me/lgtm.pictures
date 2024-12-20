@@ -190,8 +190,8 @@ importers:
         specifier: 0.1.4
         version: 0.1.4
       '@vanilla-extract/next-plugin':
-        specifier: 2.4.7
-        version: 2.4.7(@types/node@22.10.2)(next@14.2.20(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
+        specifier: 2.4.8
+        version: 2.4.8(@types/node@22.10.2)(next@14.2.20(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
       '@vanilla-extract/recipes':
         specifier: 0.5.5
         version: 0.5.5(@vanilla-extract/css@1.16.1)
@@ -2806,17 +2806,26 @@ packages:
   '@vanilla-extract/babel-plugin-debug-ids@1.1.0':
     resolution: {integrity: sha512-Zy9bKjaL2P5zsrFYQJ8IjWGlFODmZrpvFmjFE0Zv8om55Pz1JtpJtL6DvlxlWUxbVaP1HKCqsmEfFOZN8fX/ZQ==}
 
+  '@vanilla-extract/babel-plugin-debug-ids@1.2.0':
+    resolution: {integrity: sha512-z5nx2QBnOhvmlmBKeRX5sPVLz437wV30u+GJL+Hzj1rGiJYVNvgIIlzUpRNjVQ0MgAgiQIqIUbqPnmMc6HmDlQ==}
+
   '@vanilla-extract/css-utils@0.1.4':
     resolution: {integrity: sha512-3WRxMGa/VQaL32jZqRUpnnoVFSws5iPIUpQr+XlT4jXhtMeKYcA20rFK2k2Amkg04sqrO84A8hNMeABWZQesEg==}
 
   '@vanilla-extract/css@1.16.1':
     resolution: {integrity: sha512-3jKxH5ty/ZjmGoLAx8liY7e87FRCIJfnuufX/K9fQklu0YHP3ClrNisU++LkZuD+GZleqMSAQMF0r8Otln+OPQ==}
 
+  '@vanilla-extract/css@1.17.0':
+    resolution: {integrity: sha512-W6FqVFDD+C71ZlKsuj0MxOXSvHb1tvQ9h/+79aYfi097wLsALrnnBzd0by8C///iurrpQ3S+SH74lXd7Lr9MvA==}
+
   '@vanilla-extract/integration@7.1.11':
     resolution: {integrity: sha512-IGRaLrpkjyVHTHDZQBQvFBl399yRfSMJoVI2KaocEZB33aP+H4Qup83od2hc6R5IxGWdvbiiCOJCYsnmFiy85Q==}
 
-  '@vanilla-extract/next-plugin@2.4.7':
-    resolution: {integrity: sha512-J8ROSZ3NmGNqxMzI+j4s6TlqUN3/eG/6ihvrjvfILAsPhpDFQ1liGka85gA1rbFcW7CKDDzysgI0tiFf0oLXzA==}
+  '@vanilla-extract/integration@7.1.12':
+    resolution: {integrity: sha512-71HFjnfL7qXM3hqyk7z9c8zrudfO9Sut6IhSmH8IKwmLk/tIMFIL86L6nYpItfUFUa/mrER6YUQPp/SfwjRvkw==}
+
+  '@vanilla-extract/next-plugin@2.4.8':
+    resolution: {integrity: sha512-sWfbsCQyFyaizPa7O2jpqEc3VsqdJB15Bbv7Xb+wx5mOuD6cGaZYlE7wXFsIWSXuVOCNO1u9frFlxHzBVmt69Q==}
     peerDependencies:
       next: '>=12.1.7'
 
@@ -2835,6 +2844,11 @@ packages:
 
   '@vanilla-extract/webpack-plugin@2.3.15':
     resolution: {integrity: sha512-xU809X84B1B1MoHAHm6hg7PjdPTCz+mVElfEMrA5g0PzvF+PsyfDoqQpPBZjCNvu/DZ7pVhG/qefD0p4ZJ5+Ag==}
+    peerDependencies:
+      webpack: ^4.30.0 || ^5.20.2
+
+  '@vanilla-extract/webpack-plugin@2.3.16':
+    resolution: {integrity: sha512-/KkXlbQS+dXCKgxR0BhfjxNR/IZbxAPlj5VRI3ZKoUafJQ/WqUT7LEO7OUFhLQoqRj5oeMHYZ8YmkZk8na7mjQ==}
     peerDependencies:
       webpack: ^4.30.0 || ^5.20.2
 
@@ -10298,6 +10312,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@vanilla-extract/babel-plugin-debug-ids@1.2.0':
+    dependencies:
+      '@babel/core': 7.26.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@vanilla-extract/css-utils@0.1.4': {}
 
   '@vanilla-extract/css@1.16.1':
@@ -10314,6 +10334,23 @@ snapshots:
       media-query-parser: 2.0.2
       modern-ahocorasick: 1.0.0
       picocolors: 1.0.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+
+  '@vanilla-extract/css@1.17.0':
+    dependencies:
+      '@emotion/hash': 0.9.1
+      '@vanilla-extract/private': 1.0.6
+      css-what: 6.1.0
+      cssesc: 3.0.0
+      csstype: 3.1.2
+      dedent: 1.5.3
+      deep-object-diff: 1.1.9
+      deepmerge: 4.3.1
+      lru-cache: 10.4.3
+      media-query-parser: 2.0.2
+      modern-ahocorasick: 1.0.0
+      picocolors: 1.1.1
     transitivePeerDependencies:
       - babel-plugin-macros
 
@@ -10342,9 +10379,34 @@ snapshots:
       - supports-color
       - terser
 
-  '@vanilla-extract/next-plugin@2.4.7(@types/node@22.10.2)(next@14.2.20(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))':
+  '@vanilla-extract/integration@7.1.12(@types/node@22.10.2)(terser@5.18.2)':
     dependencies:
-      '@vanilla-extract/webpack-plugin': 2.3.15(@types/node@22.10.2)(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
+      '@babel/core': 7.26.0
+      '@babel/plugin-syntax-typescript': 7.25.4(@babel/core@7.26.0)
+      '@vanilla-extract/babel-plugin-debug-ids': 1.2.0
+      '@vanilla-extract/css': 1.17.0
+      dedent: 1.5.3
+      esbuild: 0.19.8
+      eval: 0.1.8
+      find-up: 5.0.0
+      javascript-stringify: 2.1.0
+      mlly: 1.5.0
+      vite: 5.0.11(@types/node@22.10.2)(terser@5.18.2)
+      vite-node: 1.2.1(@types/node@22.10.2)(terser@5.18.2)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+
+  '@vanilla-extract/next-plugin@2.4.8(@types/node@22.10.2)(next@14.2.20(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))':
+    dependencies:
+      '@vanilla-extract/webpack-plugin': 2.3.16(@types/node@22.10.2)(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
       next: 14.2.20(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/node'
@@ -10385,6 +10447,24 @@ snapshots:
       debug: 4.3.7
       loader-utils: 2.0.4
       picocolors: 1.0.1
+      webpack: 5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+
+  '@vanilla-extract/webpack-plugin@2.3.16(@types/node@22.10.2)(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))':
+    dependencies:
+      '@vanilla-extract/integration': 7.1.12(@types/node@22.10.2)(terser@5.18.2)
+      debug: 4.3.7
+      loader-utils: 2.0.4
+      picocolors: 1.1.1
       webpack: 5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19)
     transitivePeerDependencies:
       - '@types/node'
@@ -15333,7 +15413,7 @@ snapshots:
       cac: 6.7.14
       debug: 4.3.7
       pathe: 1.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.1
       vite: 5.0.11(@types/node@22.10.2)(terser@5.18.2)
     transitivePeerDependencies:
       - '@types/node'
