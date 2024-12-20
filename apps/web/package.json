@@ -68,7 +68,7 @@
     "@types/react-dom": "18.3.5",
     "@vanilla-extract/css": "1.16.1",
     "@vanilla-extract/css-utils": "0.1.4",
-    "@vanilla-extract/next-plugin": "2.4.7",
+    "@vanilla-extract/next-plugin": "2.4.8",
     "@vanilla-extract/recipes": "0.5.5",
     "@vanilla-extract/vite-plugin": "4.0.18",
     "@vanilla-extract/webpack-plugin": "2.3.15",
