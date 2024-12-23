@@ -184,8 +184,8 @@ importers:
         specifier: 18.3.5
         version: 18.3.5(@types/react@18.3.18)
       '@vanilla-extract/css':
-        specifier: 1.16.1
-        version: 1.16.1
+        specifier: 1.17.0
+        version: 1.17.0
       '@vanilla-extract/css-utils':
         specifier: 0.1.4
         version: 0.1.4
@@ -194,7 +194,7 @@ importers:
         version: 2.4.8(@types/node@22.10.2)(next@14.2.21(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.18.2)(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
       '@vanilla-extract/recipes':
         specifier: 0.5.5
-        version: 0.5.5(@vanilla-extract/css@1.16.1)
+        version: 0.5.5(@vanilla-extract/css@1.17.0)
       '@vanilla-extract/vite-plugin':
         specifier: 4.0.19
         version: 4.0.19(@types/node@22.10.2)(terser@5.18.2)(vite@5.0.11(@types/node@22.10.2)(terser@5.18.2))
@@ -2766,9 +2766,6 @@ packages:
 
   '@vanilla-extract/css-utils@0.1.4':
     resolution: {integrity: sha512-3WRxMGa/VQaL32jZqRUpnnoVFSws5iPIUpQr+XlT4jXhtMeKYcA20rFK2k2Amkg04sqrO84A8hNMeABWZQesEg==}
-
-  '@vanilla-extract/css@1.16.1':
-    resolution: {integrity: sha512-3jKxH5ty/ZjmGoLAx8liY7e87FRCIJfnuufX/K9fQklu0YHP3ClrNisU++LkZuD+GZleqMSAQMF0r8Otln+OPQ==}
 
   '@vanilla-extract/css@1.17.0':
     resolution: {integrity: sha512-W6FqVFDD+C71ZlKsuj0MxOXSvHb1tvQ9h/+79aYfi097wLsALrnnBzd0by8C///iurrpQ3S+SH74lXd7Lr9MvA==}
@@ -5936,9 +5933,6 @@ packages:
 
   picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
-
-  picocolors@1.0.1:
-    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -10133,23 +10127,6 @@ snapshots:
 
   '@vanilla-extract/css-utils@0.1.4': {}
 
-  '@vanilla-extract/css@1.16.1':
-    dependencies:
-      '@emotion/hash': 0.9.1
-      '@vanilla-extract/private': 1.0.6
-      css-what: 6.1.0
-      cssesc: 3.0.0
-      csstype: 3.1.2
-      dedent: 1.5.3
-      deep-object-diff: 1.1.9
-      deepmerge: 4.3.1
-      lru-cache: 10.4.3
-      media-query-parser: 2.0.2
-      modern-ahocorasick: 1.0.0
-      picocolors: 1.0.1
-    transitivePeerDependencies:
-      - babel-plugin-macros
-
   '@vanilla-extract/css@1.17.0':
     dependencies:
       '@emotion/hash': 0.9.1
@@ -10210,9 +10187,9 @@ snapshots:
 
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vanilla-extract/recipes@0.5.5(@vanilla-extract/css@1.16.1)':
+  '@vanilla-extract/recipes@0.5.5(@vanilla-extract/css@1.17.0)':
     dependencies:
-      '@vanilla-extract/css': 1.16.1
+      '@vanilla-extract/css': 1.17.0
 
   '@vanilla-extract/vite-plugin@4.0.19(@types/node@22.10.2)(terser@5.18.2)(vite@5.0.11(@types/node@22.10.2)(terser@5.18.2))':
     dependencies:
@@ -13751,8 +13728,6 @@ snapshots:
   pend@1.2.0: {}
 
   picocolors@1.0.0: {}
-
-  picocolors@1.0.1: {}
 
   picocolors@1.1.1: {}
 
