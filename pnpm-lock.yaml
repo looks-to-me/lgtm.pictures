@@ -137,7 +137,7 @@ importers:
     devDependencies:
       '@cloudflare/next-on-pages':
         specifier: 1.13.7
-        version: 1.13.7(@cloudflare/workers-types@4.20241230.0)(vercel@39.2.5(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5))(wrangler@3.99.0(@cloudflare/workers-types@4.20241230.0))
+        version: 1.13.7(@cloudflare/workers-types@4.20241230.0)(vercel@39.2.6(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5))(wrangler@3.99.0(@cloudflare/workers-types@4.20241230.0))
       '@cloudflare/workers-types':
         specifier: 4.20241230.0
         version: 4.20241230.0
@@ -232,8 +232,8 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
       vercel:
-        specifier: 39.2.5
-        version: 39.2.5(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5)
+        specifier: 39.2.6
+        version: 39.2.6(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5)
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@edge-runtime/vm@3.2.0)(@types/node@22.10.5)(jsdom@25.0.0)(terser@5.18.2)
@@ -7152,8 +7152,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vercel@39.2.5:
-    resolution: {integrity: sha512-mPrXm2Va5uPmajy3sEXf50ExEPAlZtYkKJpCvKMCGWNl6J/AH+n9qYrBo0GsKTYrMSnzGzeGZgzNCGoVFI4xCA==}
+  vercel@39.2.6:
+    resolution: {integrity: sha512-s3T8eEXeNcMcgU+NsHS2/1B7Pj1aWip+dy0IQqbDwy1ArFFI0S4IzpN2+XxfG8Y6fPJnLGUyywTe/nbFU7SWPg==}
     engines: {node: '>= 16'}
     hasBin: true
 
@@ -8342,7 +8342,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20241230.0)(vercel@39.2.5(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5))(wrangler@3.99.0(@cloudflare/workers-types@4.20241230.0))':
+  '@cloudflare/next-on-pages@1.13.7(@cloudflare/workers-types@4.20241230.0)(vercel@39.2.6(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5))(wrangler@3.99.0(@cloudflare/workers-types@4.20241230.0))':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2
@@ -8356,7 +8356,7 @@ snapshots:
       package-manager-manager: 0.2.0
       pcre-to-regexp: 1.1.0
       semver: 7.6.3
-      vercel: 39.2.5(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5)
+      vercel: 39.2.6(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5)
       wrangler: 3.99.0(@cloudflare/workers-types@4.20241230.0)
     optionalDependencies:
       '@cloudflare/workers-types': 4.20241230.0
@@ -15041,7 +15041,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@39.2.5(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5):
+  vercel@39.2.6(@swc/core@1.7.24(@swc/helpers@0.5.5))(rollup@4.9.5):
     dependencies:
       '@vercel/build-utils': 9.0.1
       '@vercel/fun': 1.1.2
