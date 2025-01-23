@@ -40,7 +40,7 @@
     "date-fns": "4.1.0",
     "deepmerge": "4.3.1",
     "drizzle-orm": "0.38.4",
-    "lucide-react": "0.471.1",
+    "lucide-react": "0.473.0",
     "modern-normalize": "3.0.1",
     "next": "14.2.23",
     "react": "18.3.1",
