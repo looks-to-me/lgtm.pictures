@@ -108,8 +108,8 @@ importers:
         specifier: 4.3.1
         version: 4.3.1
       drizzle-orm:
-        specifier: 0.38.4
-        version: 0.38.4(@cloudflare/workers-types@4.20250124.3)(@libsql/client-wasm@0.14.0)(@types/react@18.3.18)(better-sqlite3@11.8.1)(react@18.3.1)
+        specifier: 0.39.0
+        version: 0.39.0(@cloudflare/workers-types@4.20250124.3)(@libsql/client-wasm@0.14.0)(@types/react@18.3.18)(better-sqlite3@11.8.1)(react@18.3.1)
       lucide-react:
         specifier: 0.473.0
         version: 0.473.0(react@18.3.1)
@@ -3852,8 +3852,8 @@ packages:
     resolution: {integrity: sha512-kT8sgyC2hZrtOh5okhEBiwgx8jx+EjLUFoANFVVkBbxIjcb8XjaUorZ0rwCEUEd7THclI3ZARR64pmxloMW3Aw==}
     hasBin: true
 
-  drizzle-orm@0.38.4:
-    resolution: {integrity: sha512-s7/5BpLKO+WJRHspvpqTydxFob8i1vo2rEx4pY6TGY7QSMuUfWUuzaY0DIpXCkgHOo37BaFC+SJQb99dDUXT3Q==}
+  drizzle-orm@0.39.0:
+    resolution: {integrity: sha512-kkZwo3Jvht0fdJD/EWGx0vYcEK0xnGrlNVaY07QYluRZA9N21B9VFbY+54bnb/1xvyzcg97tE65xprSAP/fFGQ==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -11458,7 +11458,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.38.4(@cloudflare/workers-types@4.20250124.3)(@libsql/client-wasm@0.14.0)(@types/react@18.3.18)(better-sqlite3@11.8.1)(react@18.3.1):
+  drizzle-orm@0.39.0(@cloudflare/workers-types@4.20250124.3)(@libsql/client-wasm@0.14.0)(@types/react@18.3.18)(better-sqlite3@11.8.1)(react@18.3.1):
     optionalDependencies:
       '@cloudflare/workers-types': 4.20250124.3
       '@libsql/client-wasm': 0.14.0
