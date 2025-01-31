@@ -129,8 +129,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1
       sonner:
-        specifier: 1.7.2
-        version: 1.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 1.7.3
+        version: 1.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       valibot:
         specifier: 0.42.1
         version: 0.42.1(typescript@5.7.3)
@@ -6546,8 +6546,8 @@ packages:
     resolution: {integrity: sha512-FC+lgizVPfie0kkhqUScwRu1O/lF6NOgJmlCgK+/LYxDCTk8sGelYaHDhFcDN+Sn3Cv+3VSa4Byeo+IMCzpMgQ==}
     engines: {node: '>=12'}
 
-  sonner@1.7.2:
-    resolution: {integrity: sha512-zMbseqjrOzQD1a93lxahm+qMGxWovdMxBlkTbbnZdNqVLt4j+amF9PQxUCL32WfztOFt9t9ADYkejAL3jF9iNA==}
+  sonner@1.7.3:
+    resolution: {integrity: sha512-KXLWQfyR6AHpYZuQk8eO8fCbZSJY3JOpgsu/tbGc++jgPjj8JsR1ZpO8vFhqR/OxvWMQCSAmnSShY0gr4FPqHg==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
@@ -14435,7 +14435,7 @@ snapshots:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 4.0.0
 
-  sonner@1.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  sonner@1.7.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
