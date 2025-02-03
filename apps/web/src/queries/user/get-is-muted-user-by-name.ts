@@ -1,8 +1,8 @@
+import { schema } from '@looks-to-me/package-database';
 import { and, eq } from 'drizzle-orm';
 
 import { getLoginUser } from './get-login-user';
 import { database } from '../../app/_libs/database';
-import { schema } from '../../app/_libs/database/schema';
 
 import type { User } from '../../repositories/user-repository';
 

@@ -13,11 +13,10 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "lint:code": "eslint .",
-    "lint:type": "tsc --pretty --noEmit",
-    "migrate:create": "drizzle-kit generate:sqlite",
-    "migrate:apply": "wrangler d1 migrations apply local --local"
+    "lint:type": "tsc --pretty --noEmit"
   },
   "dependencies": {
+    "@looks-to-me/package-database": "workspace:*",
     "@looks-to-me/package-image-cache": "workspace:*",
     "@paralleldrive/cuid2": "2.2.2",
     "@radix-ui/react-accessible-icon": "1.1.1",
@@ -55,7 +54,7 @@
     "@praha/eslint-config-definer": "2.0.1",
     "@praha/eslint-config-next": "4.0.2",
     "@praha/eslint-config-react": "4.0.2",
-    "@sqlite.org/sqlite-wasm": "3.42.0-build7",
+    "@sqlite.org/sqlite-wasm": "3.48.0-build4",
     "@storybook/addon-essentials": "8.5.3",
     "@storybook/addon-interactions": "8.5.3",
     "@storybook/addon-links": "8.5.3",
@@ -75,7 +74,6 @@
     "@vitejs/plugin-react": "4.3.4",
     "better-sqlite3": "11.8.1",
     "dotenv": "16.4.7",
-    "drizzle-kit": "0.30.4",
     "eslint": "9.19.0",
     "mini-css-extract-plugin": "2.9.2",
     "miniflare": "3.20250129.0",

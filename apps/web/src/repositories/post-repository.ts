@@ -1,9 +1,9 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { eq, sql } from 'drizzle-orm';
 
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 
 import type { User } from './user-repository';
 
@@ -45,7 +45,7 @@ export const deletePost = async (id: Post['id']): Promise<void> => {
 };
 
 export const findPostById = async (id: Post['id']): Promise<Post | undefined> => {
-  return await database()
+  return database()
     .select({
       id: schema.posts.id,
       userId: schema.posts.userId,

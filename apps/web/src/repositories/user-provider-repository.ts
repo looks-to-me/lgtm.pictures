@@ -1,7 +1,7 @@
+import { schema } from '@looks-to-me/package-database';
 import { and, eq, sql } from 'drizzle-orm';
 
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 
 export type UserProvider = {
   userId: string;
@@ -35,7 +35,7 @@ export const findUserProviderByTypeAndSub = async (
   type: UserProvider['type'],
   sub: UserProvider['sub'],
 ): Promise<UserProvider | undefined> => {
-  return await database()
+  return database()
     .select()
     .from(schema.userProviders)
     .where(

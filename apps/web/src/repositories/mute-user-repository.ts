@@ -1,9 +1,9 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { and, eq } from 'drizzle-orm';
 
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 
 export type MuteUser = {
   userId: string;
@@ -43,7 +43,7 @@ export const findMuteUserByUserIdAndMuteUserId = async (
   userId: MuteUser['userId'],
   muteUserId: MuteUser['muteUserId'],
 ): Promise<MuteUser | undefined> => {
-  return await database()
+  return database()
     .select({
       userId: schema.muteUsers.userId,
       muteUserId: schema.muteUsers.muteUserId,

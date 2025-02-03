@@ -1,12 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
-import sqlite3InitModule from '@sqlite.org/sqlite-wasm';
+import { databaseOfWasm } from '@looks-to-me/package-database/wasm';
 import { sql } from 'drizzle-orm';
-import { drizzle } from 'drizzle-orm/sqlite-proxy';
 import * as v from 'valibot';
 
 import { initDatabase } from './index';
-import { schema } from '../schema';
 
 const getJournal = async () => {
   const result = await fetch('./meta/_journal.json').then((result) => result.text());
@@ -22,23 +18,7 @@ const getQuery = async (tag: string) => {
 };
 
 export const initMockDatabase = async () => {
-  const sqlite = await sqlite3InitModule().then((sqlite) => new sqlite.oo1.JsStorageDb('local'));
-  const database = drizzle(async (sql, parameters) => {
-    return await new Promise((resolve) => {
-      try {
-        const rows = sqlite.exec({
-          sql,
-          bind: parameters,
-          rowMode: 'object',
-          returnValue: 'resultRows',
-        });
-        resolve({ rows });
-      } catch (error) {
-        console.error(error);
-        resolve({ rows: [] });
-      }
-    });
-  }, { schema });
+  const database = await databaseOfWasm();
   initDatabase(database);
 
   const tables = await database.all<{ name: string }>(sql.raw('SELECT name FROM sqlite_master WHERE type=\'table\';'));

@@ -1,0 +1,34 @@
+{
+  "name": "@looks-to-me/package-database",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    },
+    "./wasm": {
+      "import": "./src/wasm.ts",
+      "require": "./src/wasm.ts"
+    }
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "migrate:create": "drizzle-kit generate:sqlite",
+    "migrate:apply": "wrangler d1 migrations apply local --local",
+    "lint:code": "eslint",
+    "lint:type": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.48.0-build4",
+    "drizzle-orm": "0.39.1"
+  },
+  "devDependencies": {
+    "@praha/eslint-config-definer": "2.0.1",
+    "drizzle-kit": "0.30.4",
+    "eslint": "9.18.0",
+    "typescript": "5.7.3"
+  }
+}
