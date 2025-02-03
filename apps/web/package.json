@@ -81,7 +81,7 @@
     "storybook": "8.5.3",
     "typescript": "5.7.3",
     "vercel": "39.4.2",
-    "vitest": "2.1.8",
+    "vitest": "3.0.4",
     "wrangler": "3.107.2"
   }
 }
