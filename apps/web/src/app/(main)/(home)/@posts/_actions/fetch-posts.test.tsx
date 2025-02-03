@@ -1,10 +1,10 @@
+import { schema } from '@looks-to-me/package-database';
 import { createId } from '@paralleldrive/cuid2';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { fetchPosts } from './fetch-posts';
 import { getLoginUser } from '../../../../../queries/user/get-login-user';
 import { database } from '../../../../_libs/database';
-import { schema } from '../../../../_libs/database/schema';
 import { setupDatabase } from '../../../../_libs/test/setup-database';
 import { setupWorker } from '../../../../_libs/test/setup-worker';
 

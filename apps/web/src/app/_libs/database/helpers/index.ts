@@ -1,16 +1,16 @@
+import { createRequire } from 'node:module';
 import path from 'node:path';
 
+import { schema } from '@looks-to-me/package-database';
 import { sql } from 'drizzle-orm';
 import { readMigrationFiles } from 'drizzle-orm/migrator';
 
-import { schema } from '../schema';
-
-import type { Database } from '../instance';
+import type { Database } from '@looks-to-me/package-database';
 
 export const migrate = async (database: Database) => {
+  const require = createRequire(import.meta.url);
   const migrations = readMigrationFiles({
-    // eslint-disable-next-line unicorn/prefer-module
-    migrationsFolder: path.join(__dirname, '../../../../../migrations'),
+    migrationsFolder: path.join(require.resolve('@looks-to-me/package-database'), '../../migrations'),
   });
 
   for (const migration of migrations) {

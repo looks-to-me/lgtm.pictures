@@ -1,11 +1,8 @@
-import { drizzle } from 'drizzle-orm/d1';
+import { databaseOfD1 } from '@looks-to-me/package-database';
 
 import { privateEnv } from '../../env';
-import { schema } from '../schema';
 
-import type { BaseSQLiteDatabase } from 'drizzle-orm/sqlite-core';
-
-export type Database = BaseSQLiteDatabase<'async', unknown, typeof schema>;
+import type { Database } from '@looks-to-me/package-database';
 
 let instance: Database | undefined;
 
@@ -16,7 +13,7 @@ export const initDatabase = (value: Database): void => {
 
 export const database = (): Database => {
   if (instance) return instance;
-  const database = drizzle(privateEnv().DB, { schema });
+  const database = databaseOfD1(privateEnv().DB);
   initDatabase(database);
   return database;
 };

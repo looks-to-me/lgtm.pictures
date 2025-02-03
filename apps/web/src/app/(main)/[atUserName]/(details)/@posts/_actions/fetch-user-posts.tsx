@@ -1,9 +1,9 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { and, desc, eq, lt } from 'drizzle-orm';
 
 import { database } from '../../../../../_libs/database';
-import { schema } from '../../../../../_libs/database/schema';
 import { Post } from '../../../../_components/post';
 
 import type { InfiniteScrollEdge } from '../../../../../../components/elements/infinite-scroll';

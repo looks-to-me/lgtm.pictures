@@ -11,7 +11,7 @@ export default (phase) => {
    */
   const nextConfig = {
     transpilePackages: [
-      '@looks-to-me/package-image-cache',
+      '@looks-to-me/*',
     ],
     eslint: {
       ignoreDuringBuilds: true,

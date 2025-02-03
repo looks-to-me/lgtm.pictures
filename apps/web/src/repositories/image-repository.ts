@@ -1,9 +1,9 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { eq, sql } from 'drizzle-orm';
 
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 
 export type Image = {
   id: string;

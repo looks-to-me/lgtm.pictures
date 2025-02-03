@@ -1,10 +1,10 @@
+import { schema } from '@looks-to-me/package-database';
 import { createId } from '@paralleldrive/cuid2';
 import { eq } from 'drizzle-orm';
 import { beforeEach, describe, expect, it } from 'vitest';
 
 import { findUserById, findUserByName, saveUser } from './user-repository';
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 import { setupDatabase } from '../app/_libs/test/setup-database';
 import { setupWorker } from '../app/_libs/test/setup-worker';
 

@@ -1,10 +1,10 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { and, eq, isNull, ne, or, sql } from 'drizzle-orm';
 
 import { getLoginUser } from '../../../../../queries/user/get-login-user';
 import { database } from '../../../../_libs/database';
-import { schema } from '../../../../_libs/database/schema';
 import { Post } from '../../../_components/post';
 
 import type { InfiniteScrollEdge } from '../../../../../components/elements/infinite-scroll';

@@ -1,9 +1,9 @@
 'use server';
 
+import { schema } from '@looks-to-me/package-database';
 import { eq, sql } from 'drizzle-orm';
 
 import { database } from '../app/_libs/database';
-import { schema } from '../app/_libs/database/schema';
 
 export type User = {
   id: string;
@@ -55,7 +55,7 @@ export const saveUser = async (user: User): Promise<User> => {
 };
 
 export const findUserById = async (id: User['id']): Promise<User | undefined> => {
-  return await database()
+  return database()
     .select({
       id: schema.users.id,
       profile: {
@@ -71,7 +71,7 @@ export const findUserById = async (id: User['id']): Promise<User | undefined> =>
 };
 
 export const findUserByName = async (name: User['profile']['name']): Promise<User | undefined> => {
-  return await database()
+  return database()
     .select({
       id: schema.users.id,
       profile: {

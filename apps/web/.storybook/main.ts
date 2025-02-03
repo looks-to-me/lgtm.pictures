@@ -8,7 +8,7 @@ import type { StorybookConfig } from '@storybook/nextjs';
 const config: StorybookConfig = {
   staticDirs: [
     '../public',
-    '../migrations',
+    '../node_modules/@looks-to-me/package-database/migrations',
   ],
   stories: [
     '../src/**/*.mdx',

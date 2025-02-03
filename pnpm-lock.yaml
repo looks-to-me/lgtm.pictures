@@ -44,6 +44,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@looks-to-me/package-database':
+        specifier: workspace:*
+        version: link:../../packages/database
       '@looks-to-me/package-image-cache':
         specifier: workspace:*
         version: link:../../packages/image-cache
@@ -151,8 +154,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2(cy6uhxyckwbtxq5nznw6dtg4ne)
       '@sqlite.org/sqlite-wasm':
-        specifier: 3.42.0-build7
-        version: 3.42.0-build7
+        specifier: 3.48.0-build4
+        version: 3.48.0-build4
       '@storybook/addon-essentials':
         specifier: 8.5.3
         version: 8.5.3(@types/react@18.3.18)(storybook@8.5.3)
@@ -210,9 +213,6 @@ importers:
       dotenv:
         specifier: 16.4.7
         version: 16.4.7
-      drizzle-kit:
-        specifier: 0.30.4
-        version: 0.30.4
       eslint:
         specifier: 9.19.0
         version: 9.19.0(jiti@1.21.6)
@@ -281,6 +281,28 @@ importers:
       wrangler:
         specifier: 3.107.2
         version: 3.107.2(@cloudflare/workers-types@4.20250129.0)
+
+  packages/database:
+    dependencies:
+      '@sqlite.org/sqlite-wasm':
+        specifier: 3.48.0-build4
+        version: 3.48.0-build4
+      drizzle-orm:
+        specifier: 0.39.1
+        version: 0.39.1(@cloudflare/workers-types@4.20250129.0)(@libsql/client-wasm@0.14.0)(@types/react@18.3.18)(better-sqlite3@11.8.1)(react@18.3.1)
+    devDependencies:
+      '@praha/eslint-config-definer':
+        specifier: 2.0.1
+        version: 2.0.1(eslint@9.18.0(jiti@1.21.6))
+      drizzle-kit:
+        specifier: 0.30.4
+        version: 0.30.4
+      eslint:
+        specifier: 9.18.0
+        version: 9.18.0(jiti@1.21.6)
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
 
   packages/image-cache:
     devDependencies:
@@ -1382,6 +1404,10 @@ packages:
     resolution: {integrity: sha512-tw2HxzQkrbeuvyj1tG2Yqq+0H9wGoI2IMk4EOsQeX+vmd75FtJAzf+gTA69WF+baUKRYQ3x2kbLE08js5OsTVg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@eslint/js@9.18.0':
+    resolution: {integrity: sha512-fK6L7rxcq6/z+AaQMtiFTkvbHkBLNlwyRxHpKawP0x3u9+NC6MQTnFW+AdpwC6gfHTW0051cokQgtTN2FqlxQA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@eslint/js@9.19.0':
     resolution: {integrity: sha512-rbq9/g38qjfqFLOVPvwjIvFFdNziEC5S65jmjPw5r6A//QH+W91akh9irMwjDN8zKUTak6W9EsAv4m/7Wnw0UQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2247,8 +2273,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@sqlite.org/sqlite-wasm@3.42.0-build7':
-    resolution: {integrity: sha512-3c8zpD8w9ex9ZA+y86tv85bj9zioRsCTt9MkVPEwAjhZ8InjxeoLZTyCw0LpH6fF9N2V1iZCKeFoDVbimv1q8g==}
+  '@sqlite.org/sqlite-wasm@3.48.0-build4':
+    resolution: {integrity: sha512-hI6twvUkzOmyGZhQMza1gpfqErZxXRw6JEsiVjUbo7tFanVD+8Oil0Ih3l2nGzHdxPI41zFmfUQG7GHqhciKZQ==}
     hasBin: true
 
   '@storybook/addon-actions@8.5.3':
@@ -3502,9 +3528,6 @@ packages:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
 
-  comlink@4.4.1:
-    resolution: {integrity: sha512-+1dlx0aY5Jo1vHy/tSsIGpSkN4tS9rZSW8FIhG0JH/crs9wwweswIo/POr451r7bZww3hFbPAKnTpimzL/mm4Q==}
-
   commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
@@ -4006,9 +4029,6 @@ packages:
   es-module-lexer@1.4.1:
     resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==}
 
-  es-module-lexer@1.5.4:
-    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
-
   es-module-lexer@1.6.0:
     resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
 
@@ -4436,6 +4456,16 @@ packages:
   eslint-visitor-keys@4.2.0:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  eslint@9.18.0:
+    resolution: {integrity: sha512-+waTfRWQlSbpt3KWE+CjrPPYnbq9kfZIYUqapc0uBXyjTp8aYXZDsUH16m39Ryq3NjAVP4tjuF7KaukeqoCoaA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    hasBin: true
+    peerDependencies:
+      jiti: '*'
+    peerDependenciesMeta:
+      jiti:
+        optional: true
 
   eslint@9.19.0:
     resolution: {integrity: sha512-ug92j0LepKlbbEv6hD911THhoRHmbdXt2gX+VDABAW/Ir7D3nqKdv5Pf5vtlyY6HQMTEP2skXY43ueqTCWssEA==}
@@ -8550,6 +8580,11 @@ snapshots:
   '@esbuild/win32-x64@0.19.8':
     optional: true
 
+  '@eslint-community/eslint-utils@4.4.0(eslint@9.18.0(jiti@1.21.6))':
+    dependencies:
+      eslint: 9.18.0(jiti@1.21.6)
+      eslint-visitor-keys: 3.4.3
+
   '@eslint-community/eslint-utils@4.4.0(eslint@9.19.0(jiti@1.21.6))':
     dependencies:
       eslint: 9.19.0(jiti@1.21.6)
@@ -8588,6 +8623,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.16.0': {}
+
+  '@eslint/js@9.18.0': {}
 
   '@eslint/js@9.19.0': {}
 
@@ -8861,6 +8898,10 @@ snapshots:
       eslint-plugin-jsonc: 2.18.2(eslint@9.19.0(jiti@1.21.6))
     transitivePeerDependencies:
       - '@eslint/json'
+
+  '@praha/eslint-config-definer@2.0.1(eslint@9.18.0(jiti@1.21.6))':
+    dependencies:
+      eslint: 9.18.0(jiti@1.21.6)
 
   '@praha/eslint-config-definer@2.0.1(eslint@9.19.0(jiti@1.21.6))':
     dependencies:
@@ -9381,9 +9422,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@sqlite.org/sqlite-wasm@3.42.0-build7':
-    optionalDependencies:
-      comlink: 4.4.1
+  '@sqlite.org/sqlite-wasm@3.48.0-build4': {}
 
   '@storybook/addon-actions@8.5.3(storybook@8.5.3)':
     dependencies:
@@ -11079,9 +11118,6 @@ snapshots:
       delayed-stream: 1.0.0
     optional: true
 
-  comlink@4.4.1:
-    optional: true
-
   commander@11.1.0: {}
 
   commander@2.20.3: {}
@@ -11554,8 +11590,6 @@ snapshots:
 
   es-module-lexer@1.4.1: {}
 
-  es-module-lexer@1.5.4: {}
-
   es-module-lexer@1.6.0: {}
 
   es-object-atoms@1.0.0:
@@ -12004,6 +12038,47 @@ snapshots:
   eslint-visitor-keys@3.4.3: {}
 
   eslint-visitor-keys@4.2.0: {}
+
+  eslint@9.18.0(jiti@1.21.6):
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.18.0(jiti@1.21.6))
+      '@eslint-community/regexpp': 4.12.1
+      '@eslint/config-array': 0.19.1
+      '@eslint/core': 0.10.0
+      '@eslint/eslintrc': 3.2.0
+      '@eslint/js': 9.18.0
+      '@eslint/plugin-kit': 0.2.5
+      '@humanfs/node': 0.16.6
+      '@humanwhocodes/module-importer': 1.0.1
+      '@humanwhocodes/retry': 0.4.1
+      '@types/estree': 1.0.6
+      '@types/json-schema': 7.0.15
+      ajv: 6.12.6
+      chalk: 4.1.2
+      cross-spawn: 7.0.6
+      debug: 4.4.0
+      escape-string-regexp: 4.0.0
+      eslint-scope: 8.2.0
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      esquery: 1.6.0
+      esutils: 2.0.3
+      fast-deep-equal: 3.1.3
+      file-entry-cache: 8.0.0
+      find-up: 5.0.0
+      glob-parent: 6.0.2
+      ignore: 5.3.1
+      imurmurhash: 0.1.4
+      is-glob: 4.0.3
+      json-stable-stringify-without-jsonify: 1.0.1
+      lodash.merge: 4.6.2
+      minimatch: 3.1.2
+      natural-compare: 1.4.0
+      optionator: 0.9.3
+    optionalDependencies:
+      jiti: 1.21.6
+    transitivePeerDependencies:
+      - supports-color
 
   eslint@9.19.0(jiti@1.21.6):
     dependencies:
@@ -15032,7 +15107,7 @@ snapshots:
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
-      es-module-lexer: 1.5.4
+      es-module-lexer: 1.6.0
       pathe: 1.1.2
       vite: 5.0.11(@types/node@22.13.0)(terser@5.18.2)
     transitivePeerDependencies:
@@ -15082,7 +15157,7 @@ snapshots:
       '@vitest/spy': 2.1.8
       '@vitest/utils': 2.1.8
       chai: 5.1.2
-      debug: 4.3.7
+      debug: 4.4.0
       expect-type: 1.1.0
       magic-string: 0.30.12
       pathe: 1.1.2

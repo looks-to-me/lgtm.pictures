@@ -1,9 +1,9 @@
+import { schema } from '@looks-to-me/package-database';
 import { eq } from 'drizzle-orm';
 import { redirect } from 'next/navigation';
 
 import { getLoginUser } from './get-login-user';
 import { database } from '../../app/_libs/database';
-import { schema } from '../../app/_libs/database/schema';
 
 export type MutedUser = {
   id: string;
@@ -17,7 +17,7 @@ export const getMutedUsers = async (): Promise<MutedUser[]> => {
   const loginUser = await getLoginUser();
   if (!loginUser) redirect('/login');
 
-  return await database()
+  return database()
     .select({
       id: schema.muteUsers.muteUserId,
       profile: {
