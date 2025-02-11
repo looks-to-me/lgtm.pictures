@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@sqlite.org/sqlite-wasm": "3.48.0-build4",
-    "drizzle-orm": "0.39.2"
+    "drizzle-orm": "0.39.3"
   },
   "devDependencies": {
     "@praha/eslint-config-definer": "2.0.1",
