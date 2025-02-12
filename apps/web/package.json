@@ -69,7 +69,7 @@
     "@vanilla-extract/css-utils": "0.1.4",
     "@vanilla-extract/next-plugin": "2.4.10",
     "@vanilla-extract/recipes": "0.5.5",
-    "@vanilla-extract/vite-plugin": "5.0.0",
+    "@vanilla-extract/vite-plugin": "5.0.1",
     "@vanilla-extract/webpack-plugin": "2.3.17",
     "@vitejs/plugin-react": "4.3.4",
     "better-sqlite3": "11.8.1",

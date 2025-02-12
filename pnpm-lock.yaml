@@ -199,8 +199,8 @@ importers:
         specifier: 0.5.5
         version: 0.5.5(@vanilla-extract/css@1.17.1)
       '@vanilla-extract/vite-plugin':
-        specifier: 5.0.0
-        version: 5.0.0(@types/node@22.13.1)(terser@5.18.2)(vite@5.0.11(@types/node@22.13.1)(terser@5.18.2))
+        specifier: 5.0.1
+        version: 5.0.1(@types/node@22.13.1)(terser@5.18.2)(vite@5.0.11(@types/node@22.13.1)(terser@5.18.2))
       '@vanilla-extract/webpack-plugin':
         specifier: 2.3.17
         version: 2.3.17(webpack@5.88.1(@swc/core@1.7.24(@swc/helpers@0.5.5))(esbuild@0.17.19))
@@ -2800,8 +2800,8 @@ packages:
   '@vanilla-extract/babel-plugin-debug-ids@1.2.0':
     resolution: {integrity: sha512-z5nx2QBnOhvmlmBKeRX5sPVLz437wV30u+GJL+Hzj1rGiJYVNvgIIlzUpRNjVQ0MgAgiQIqIUbqPnmMc6HmDlQ==}
 
-  '@vanilla-extract/compiler@0.1.1':
-    resolution: {integrity: sha512-OJk31hrDZlDKP7K3Yr5y731Wrm1vf7fNyM5eXjfGyDovZLcVAFuB8tt7pXqpdCz0RnrKsMzlvJD3f6WT2MaIug==}
+  '@vanilla-extract/compiler@0.1.2':
+    resolution: {integrity: sha512-B4T5P+Fz2Big0GRspQSi4BIyPF3cJ2/+/NWSI6Lw5Tq2JXv9nzjTGU4gKlWzyvaxt/0CLPE+Zo40fUsUv5lttQ==}
 
   '@vanilla-extract/css-utils@0.1.4':
     resolution: {integrity: sha512-3WRxMGa/VQaL32jZqRUpnnoVFSws5iPIUpQr+XlT4jXhtMeKYcA20rFK2k2Amkg04sqrO84A8hNMeABWZQesEg==}
@@ -2828,8 +2828,8 @@ packages:
     peerDependencies:
       '@vanilla-extract/css': ^1.0.0
 
-  '@vanilla-extract/vite-plugin@5.0.0':
-    resolution: {integrity: sha512-ZbdxalIUZicTjXcFFcZV56aCixvkPZE8M9mUwa2nDCdpVo/BKuCPt08LvU5aNwZRDkuPOiaaPHcmw/+xxdM15A==}
+  '@vanilla-extract/vite-plugin@5.0.1':
+    resolution: {integrity: sha512-65IhqaNEAv/KjO1jJ52hSXiKUJqeFPlyY/hpRT71Y6bFoasHhzOcZKIQ/ze4fQovjjDL4US565rEiIn1I2qhFA==}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0
 
@@ -7178,11 +7178,6 @@ packages:
   vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
 
-  vite-node@3.0.4:
-    resolution: {integrity: sha512-7JZKEzcYV2Nx3u6rlvN8qdo3QV7Fxyt6hx+CCKz9fbWxdX5IvUOmTWEAxMrWxaiSf7CKGLJQ5rFu8prb/jBjOA==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
-    hasBin: true
-
   vite-node@3.0.5:
     resolution: {integrity: sha512-02JEJl7SbtwSDJdYS537nU6l+ktdvcREfLksk/NDAqtdKWGqHl+joXzEubHROmS3E6pip+Xgu2tFezMu75jH7A==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
@@ -10124,12 +10119,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vanilla-extract/compiler@0.1.1(@types/node@22.13.1)(terser@5.18.2)':
+  '@vanilla-extract/compiler@0.1.2(@types/node@22.13.1)(terser@5.18.2)':
     dependencies:
       '@vanilla-extract/css': 1.17.1
-      '@vanilla-extract/integration': 8.0.0
+      '@vanilla-extract/integration': 8.0.1
       vite: 5.0.11(@types/node@22.13.1)(terser@5.18.2)
-      vite-node: 3.0.4(@types/node@22.13.1)(terser@5.18.2)
+      vite-node: 3.0.5(@types/node@22.13.1)(terser@5.18.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -10207,10 +10202,10 @@ snapshots:
     dependencies:
       '@vanilla-extract/css': 1.17.1
 
-  '@vanilla-extract/vite-plugin@5.0.0(@types/node@22.13.1)(terser@5.18.2)(vite@5.0.11(@types/node@22.13.1)(terser@5.18.2))':
+  '@vanilla-extract/vite-plugin@5.0.1(@types/node@22.13.1)(terser@5.18.2)(vite@5.0.11(@types/node@22.13.1)(terser@5.18.2))':
     dependencies:
-      '@vanilla-extract/compiler': 0.1.1(@types/node@22.13.1)(terser@5.18.2)
-      '@vanilla-extract/integration': 8.0.0
+      '@vanilla-extract/compiler': 0.1.2(@types/node@22.13.1)(terser@5.18.2)
+      '@vanilla-extract/integration': 8.0.1
       vite: 5.0.11(@types/node@22.13.1)(terser@5.18.2)
     transitivePeerDependencies:
       - '@types/node'
@@ -15090,23 +15085,6 @@ snapshots:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
-
-  vite-node@3.0.4(@types/node@22.13.1)(terser@5.18.2):
-    dependencies:
-      cac: 6.7.14
-      debug: 4.4.0
-      es-module-lexer: 1.6.0
-      pathe: 2.0.2
-      vite: 5.0.11(@types/node@22.13.1)(terser@5.18.2)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
 
   vite-node@3.0.5(@types/node@22.13.1)(terser@5.18.2):
     dependencies:
