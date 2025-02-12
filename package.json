@@ -19,7 +19,7 @@
     "@scaffdog/types": "4.1.0",
     "@tsconfig/strictest": "2.0.5",
     "@vitest/eslint-plugin": "1.1.28",
-    "eslint": "9.20.0",
+    "eslint": "9.20.1",
     "scaffdog": "4.1.0",
     "turbo": "2.4.1"
   },
