@@ -21,8 +21,8 @@ export const migrate = async (database: Database) => {
 };
 
 export const truncate = async (database: Database) => {
-  await database.delete(schema.posts);
   await database.delete(schema.postTags);
+  await database.delete(schema.posts);
   await database.delete(schema.images);
   await database.delete(schema.tags);
   await database.delete(schema.muteUsers);
